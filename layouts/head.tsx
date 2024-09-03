@@ -60,7 +60,7 @@ export const Head = () => {
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className="h-xxl"
+          className="h-xl"
         />
         <NavbarItem>
           <Link color="foreground" href="#" className="p-xl">
@@ -69,7 +69,7 @@ export const Head = () => {
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className="h-xxl"
+          className="h-xl"
         />
         <NavbarItem>
           <Link href="#" aria-current="page" className="p-xl">
@@ -91,7 +91,7 @@ export const Head = () => {
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className="h-xxl"
+          className="h-xl"
         />
         <NavbarItem>
           <ThemeSwitch className="ml-xl"/>

@@ -10,11 +10,13 @@ module.exports = {
   ],
 	theme: { 
 		spacing: {
-			sm: '8px',
-			md: '12px',
-			lg: '16px',
-			xl: '24px',
-			xxl: '32px',
+			sm: '0.5rem',
+			md: '1rem',
+			lg: '1.5rem',
+			xl: '2rem',
+			xxl: '3rem',
+			x3l: '5rem',
+			x4l: '10rem',
 		},
 		extend: {
 			borderRadius: {

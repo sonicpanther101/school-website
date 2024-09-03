@@ -5,36 +5,36 @@ import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 export const Footer = () => {
     return (
         <footer>
-            <div className="flex">
+            <div className="flex p-xl pt-xxl bg-slate-700">
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="p-xl">
+                    <Link color="foreground" href="#" className="">
                         Home
                     </Link>
                 </div>
                 <Divider
                     orientation="vertical"
-                    className="h-xxl"
+                    className="h-xl"
                 />
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="p-xl">
+                    <Link color="foreground" href="#" className="">
                         Our Chalets
                     </Link>
                 </div>
                 <Divider
                     orientation="vertical"
-                    className="h-xxl"
+                    className="h-xl"
                 />
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="p-xl">
+                    <Link color="foreground" href="#" className="">
                         My Account
                     </Link>
                 </div>
             </div>
-            <div className="flex">
-                <div className="flex-1 text-center">
+            <div className="flex p-xl pb-xxl bg-background/50">
+                <div className="basis-2/6 flex-1 text-center">
                     <Card
                         isBlurred
-                        className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+                        className="border-none bg-background/10"
                         shadow="sm"
                     >
                         <CardBody>
@@ -118,8 +118,8 @@ export const Footer = () => {
                         </CardBody>
                     </Card>
                 </div>
-                <div className="basis-2/6 flex-1 text-center">
-                    test
+                <div className="flex-1 text-right self-end">
+                    <p className="text-foreground/80">Maunga Club© 2024<br/>All rights reserved</p>
                 </div>
             </div>
         </footer>
