@@ -43,13 +43,15 @@ export const Head = () => {
       className={`fixed transition-all duration-250 ${isScrolled ? "shadow-md bg-secondary" : "bg-transparent"}`}>
       <NavbarBrand>
         <img
-          src="/favicon.ico"
+          src="https://imgs.search.brave.com/Cy3p8CFMTqPdyeaU3Rd7kWQnfWafux7E-EjZCxP8a3E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL21vdW50YWlu/LXBlYWstcG5nLWhk/LW1vdW50YWluLXBu/Zy0xMDUwLnBuZw"
           alt="Logo"
           width={32}
           height={32}
           className="cursor-pointer rounded-full"
         />
-        <p className="font-bold text-inherit pl-sm">Maunga Club</p>
+        <Link href="#" className="font-bold text-inherit pl-sm cursor-pointer">
+          Maunga Club
+        </Link>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">

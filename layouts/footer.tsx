@@ -1,36 +1,37 @@
 import Link from "next/link";
-import { Divider } from "@nextui-org/divider";
+import { Divider } from "@nextui-org/react";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 
 export const Footer = () => {
+
     return (
         <footer>
-            <div className="flex p-xl pt-xxl bg-secondary">
-                <div className="flex-1 text-center">
+            <div className="flex flex-col md:flex-row p-xl pt-xxl bg-secondary">
+                <div className="flex-1 text-center my-sm">
                     <Link color="foreground" href="#" className="p-md">
                         Home
                     </Link>
                 </div>
                 <Divider
                     orientation="vertical"
-                    className="h-xl"
+                    className="h-xl hidden md:inline"
                 />
-                <div className="flex-1 text-center">
+                <div className="flex-1 text-center my-sm">
                     <Link color="foreground" href="#" className="p-md">
                         Our Chalets
                     </Link>
                 </div>
                 <Divider
                     orientation="vertical"
-                    className="h-xl"
+                    className="h-xl hidden md:inline"
                 />
-                <div className="flex-1 text-center">
+                <div className="flex-1 text-center my-sm">
                     <Link color="foreground" href="#" className="p-md">
                         My Account
                     </Link>
                 </div>
             </div>
-            <div className="flex p-xl pb-xxl bg-secondary">
+            <div className="flex flex-col md:flex-row p-xl pb-xxl bg-secondary">
                 <div className="basis-2/6 flex-1 text-center">
                     <Card
                         isBlurred
@@ -38,11 +39,11 @@ export const Footer = () => {
                         shadow="sm"
                     >
                         <CardBody>
-                            <div className="flex shadow-md items-center">
+                            <div className="flex flex-col md:flex-row shadow-md items-center">
                                 <div className="flex-1">
                                     <Image
                                         alt="logo"
-                                        className="rounded-full w-9/10 ml-percent1"
+                                        className="rounded-b-none w-9/10 ml-auto md:ml-percent1 md:rounded-full"
                                         src="https://imgs.search.brave.com/Cy3p8CFMTqPdyeaU3Rd7kWQnfWafux7E-EjZCxP8a3E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL21vdW50YWlu/LXBlYWstcG5nLWhk/LW1vdW50YWluLXBu/Zy0xMDUwLnBuZw"
                                     />
                                 </div>
@@ -59,7 +60,7 @@ export const Footer = () => {
                         </CardBody>
                     </Card>
                 </div>
-                <div className="flex-1 text-right self-end">
+                <div className="flex-1 mt-xxl md:mt-auto text-right self-end">
                     <h3 className="text-xl font-medium">Contact Us</h3>
                     <p>Phone: 0XX XXX XXX</p>
                     <p>Email: user@example.com</p>

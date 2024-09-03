@@ -10,6 +10,7 @@ module.exports = {
   ],
 	theme: { 
 		spacing: {
+			none: '0',
 			sm: '0.5rem',
 			md: '1rem',
 			lg: '1.5rem',
@@ -17,6 +18,7 @@ module.exports = {
 			xxl: '3rem',
 			x3l: '5rem',
 			x4l: '10rem',
+			percent1: '5%',
 		},
 		extend: {
 			borderRadius: {
