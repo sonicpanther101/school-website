@@ -38,6 +38,19 @@ export const Head = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const menuItems = [
+    "Profile",
+    "Dashboard",
+    "Activity",
+    "Analytics",
+    "System",
+    "Deployments",
+    "My Settings",
+    "Team Settings",
+    "Help & Feedback",
+    "Log Out",
+  ];
+
   return (
     <Navbar
       isBlurred={false}
@@ -89,7 +102,7 @@ export const Head = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat" className="mr-xl p-sm rounded-full">
+          <Button as={Link} color="primary" href="#" variant="flat" className="mr-xl p-sm rounded-full bg-background">
             Sign Up
           </Button>
         </NavbarItem>
@@ -98,15 +111,31 @@ export const Head = () => {
           className="h-xl"
         />
         <NavbarItem>
-          <ThemeSwitch className="ml-xl"/>
+          <ThemeSwitch className="ml-xl hidden md:flex"/>
         </NavbarItem>
         <NavbarItem>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          // className="md:hidden"
+            className="md:hidden"
           />
         </NavbarItem>
       </NavbarContent>
+
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              color={
+                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+              }
+              className="w-full"
+              href="#"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 };
