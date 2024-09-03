@@ -7,7 +7,7 @@ export const Footer = () => {
         <footer>
             <div className="flex p-xl pt-xxl bg-secondary">
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="p-xl">
+                    <Link color="foreground" href="#" className="p-md">
                         Home
                     </Link>
                 </div>
@@ -16,7 +16,7 @@ export const Footer = () => {
                     className="h-xl"
                 />
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="p-xl">
+                    <Link color="foreground" href="#" className="p-md">
                         Our Chalets
                     </Link>
                 </div>
@@ -25,7 +25,7 @@ export const Footer = () => {
                     className="h-xl"
                 />
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="p-xl">
+                    <Link color="foreground" href="#" className="p-md">
                         My Account
                     </Link>
                 </div>
@@ -34,92 +34,51 @@ export const Footer = () => {
                 <div className="basis-2/6 flex-1 text-center">
                     <Card
                         isBlurred
-                        className="border-none bg-secondary"
+                        className="border-none bg-background"
                         shadow="sm"
                     >
                         <CardBody>
-                            <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
-                                <div className="relative col-span-6 md:col-span-4">
+                            <div className="flex shadow-md items-center">
+                                <div className="flex-1">
                                     <Image
-                                        alt="Album cover"
-                                        className="object-cover"
-                                        height={200}
-                                        shadow="md"
-                                        src="https://nextui.org/images/album-cover.png"
-                                        width="100%"
+                                        alt="logo"
+                                        className="rounded-full w-9/10 ml-percent1"
+                                        src="https://imgs.search.brave.com/Cy3p8CFMTqPdyeaU3Rd7kWQnfWafux7E-EjZCxP8a3E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL21vdW50YWlu/LXBlYWstcG5nLWhk/LW1vdW50YWluLXBu/Zy0xMDUwLnBuZw"
                                     />
                                 </div>
 
-                                <div className="flex flex-col col-span-6 md:col-span-8">
-                                    <div className="flex justify-between items-start">
-                                        <div className="flex flex-col gap-0">
-                                            <h3 className="font-semibold text-foreground/90">Daily Mix</h3>
-                                            <p className="text-small text-foreground/80">12 Tracks</p>
-                                            <h1 className="text-large font-medium mt-2">Frontend Radio</h1>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex flex-col mt-3 gap-1">
-                                        <Slider
-                                            aria-label="Music progress"
-                                            classNames={{
-                                                track: "bg-default-500/30",
-                                                thumb: "w-2 h-2 after:w-2 after:h-2 after:bg-foreground",
-                                            }}
-                                            color="foreground"
-                                            defaultValue={33}
-                                            size="sm"
-                                        />
-                                        <div className="flex justify-between">
-                                            <p className="text-small">1:23</p>
-                                            <p className="text-small text-foreground/50">4:32</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex w-full items-center justify-center">
-                                        <Button
-                                            isIconOnly
-                                            className="data-[hover]:bg-foreground/10"
-                                            radius="full"
-                                            variant="light"
-                                        >
-                                        </Button>
-                                        <Button
-                                            isIconOnly
-                                            className="data-[hover]:bg-foreground/10"
-                                            radius="full"
-                                            variant="light"
-                                        >
-                                        </Button>
-                                        <Button
-                                            isIconOnly
-                                            className="w-auto h-auto data-[hover]:bg-foreground/10"
-                                            radius="full"
-                                            variant="light"
-                                        >
-                                        </Button>
-                                        <Button
-                                            isIconOnly
-                                            className="data-[hover]:bg-foreground/10"
-                                            radius="full"
-                                            variant="light"
-                                        >
-                                        </Button>
-                                        <Button
-                                            isIconOnly
-                                            className="data-[hover]:bg-foreground/10"
-                                            radius="full"
-                                            variant="light"
-                                        >
-                                        </Button>
-                                    </div>
+                                <div className="flex-1 basis-1/3 m-xl ml-percent1">
+                                    <h3 className="text-2xl font-medium">Maunga Club</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate aspernatur eum qui eveniet architecto culpa animi adipisci reiciendis accusantium, totam nemo fugiat at voluptas soluta dignissimos magni commodi pariatur.</p>
+                                    <br />
+                                    <Link color="foreground" href="#" className="p-md">
+                                        About Us
+                                    </Link>
                                 </div>
                             </div>
                         </CardBody>
                     </Card>
                 </div>
                 <div className="flex-1 text-right self-end">
-                    <p className="text-foreground/80">Maunga Club© 2024<br/>All rights reserved</p>
+                    <h3 className="text-xl font-medium">Contact Us</h3>
+                    <p>Phone: 0XX XXX XXX</p>
+                    <p>Email: user@example.com</p>
+                    <Link href="#" className="flex items-center space-x-3 transition hover:text-primary mt-sm">
+                        <div className="flex-1"></div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            className="w-lg mr-sm"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                            />
+                        </svg>
+                        <span>Github</span>
+                    </Link>
+                    <br />
+                    <p className="text-foreground/80">Maunga Club© 2024<br />All rights reserved</p>
                 </div>
             </div>
         </footer>
