@@ -17,7 +17,6 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import Link from "next/link";
 import { Button, ButtonGroup } from "@nextui-org/button";
 
-
 export const Head = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,9 +36,12 @@ export const Head = () => {
     };
   }, []);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <Navbar
       isBlurred={false}
+      onMenuOpenChange={setIsMenuOpen}
       className={`fixed transition-all duration-250 ${isScrolled ? "shadow-md bg-secondary" : "bg-transparent"}`}>
       <NavbarBrand>
         <img
@@ -54,9 +56,9 @@ export const Head = () => {
         </Link>
       </NavbarBrand>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="gap-4 hidden md:flex" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#" className="p-xl">
+          <Link color="foreground" href="#" className="p-xl pb-md">
             Home
           </Link>
         </NavbarItem>
@@ -65,7 +67,7 @@ export const Head = () => {
           className="h-xl"
         />
         <NavbarItem>
-          <Link color="foreground" href="#" className="p-xl">
+          <Link color="foreground" href="#" className="p-xl pb-md">
             Our Chalets
           </Link>
         </NavbarItem>
@@ -74,14 +76,14 @@ export const Head = () => {
           className="h-xl"
         />
         <NavbarItem>
-          <Link href="#" aria-current="page" className="p-xl">
+          <Link href="#" aria-current="page" className="p-xl pb-md">
             My Account
           </Link>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden md:flex">
           <Link href="#" className="p-xl">
             Login
           </Link>
@@ -97,6 +99,12 @@ export const Head = () => {
         />
         <NavbarItem>
           <ThemeSwitch className="ml-xl"/>
+        </NavbarItem>
+        <NavbarItem>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          // className="md:hidden"
+          />
         </NavbarItem>
       </NavbarContent>
     </Navbar>
