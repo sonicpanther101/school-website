@@ -40,7 +40,7 @@ export const Head = () => {
   return (
     <Navbar
       isBlurred={false}
-      className={`fixed transition-all duration-250 ${isScrolled ? "shadow-md" : "bg-transparent"}`}>
+      className={`fixed transition-all duration-250 ${isScrolled ? "shadow-md bg-secondary" : "bg-transparent"}`}>
       <NavbarBrand>
         <img
           src="/favicon.ico"

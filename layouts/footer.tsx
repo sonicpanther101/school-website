@@ -5,9 +5,9 @@ import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 export const Footer = () => {
     return (
         <footer>
-            <div className="flex p-xl pt-xxl bg-slate-700">
+            <div className="flex p-xl pt-xxl bg-secondary">
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="">
+                    <Link color="foreground" href="#" className="p-xl">
                         Home
                     </Link>
                 </div>
@@ -16,7 +16,7 @@ export const Footer = () => {
                     className="h-xl"
                 />
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="">
+                    <Link color="foreground" href="#" className="p-xl">
                         Our Chalets
                     </Link>
                 </div>
@@ -25,16 +25,16 @@ export const Footer = () => {
                     className="h-xl"
                 />
                 <div className="flex-1 text-center">
-                    <Link color="foreground" href="#" className="">
+                    <Link color="foreground" href="#" className="p-xl">
                         My Account
                     </Link>
                 </div>
             </div>
-            <div className="flex p-xl pb-xxl bg-background/50">
+            <div className="flex p-xl pb-xxl bg-secondary">
                 <div className="basis-2/6 flex-1 text-center">
                     <Card
                         isBlurred
-                        className="border-none bg-background/10"
+                        className="border-none bg-secondary"
                         shadow="sm"
                     >
                         <CardBody>
