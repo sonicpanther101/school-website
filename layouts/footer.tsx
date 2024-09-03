@@ -1,62 +1,127 @@
-
+import Link from "next/link";
+import { Divider } from "@nextui-org/divider";
+import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 
 export const Footer = () => {
     return (
-        <div>
-            <footer className="relative flex flex-col items-center overflow-hidden bg-gray-50 dark:bg-gray-900 py-20 md:py-40">
-                <div className="container relative z-[1] m-auto px-6 md:px-12">
-                    <div className="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
-                        <div className="flex flex-wrap items-center justify-between md:flex-nowrap">
-                            <div
-                                className="flex w-full justify-center space-x-12 text-gray-600 dark:text-gray-300 sm:w-7/12 md:justify-start"
-                            >
-                                <ul className="list-inside list-disc space-y-8">
-                                    <li><a href="#" className="transition hover:text-primary">Home</a></li>
-                                    <li><a href="#" className="transition hover:text-primary">About</a></li>
-                                    <li><a href="#" className="transition hover:text-primary">Contact</a></li>
-                                </ul>
-
-                                <ul role="list" className="space-y-8">
-                                    <li>
-                                        <a href="#" className="flex items-center space-x-3 transition hover:text-primary">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor"
-                                                className="w-5"
-                                                viewBox="0 0 16 16"
-                                            >
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                                                />
-                                            </svg>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                                className="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left"
-                            >
-                                <span className="block text-gray-500 dark:text-gray-400">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod reprehenderit, quam accusamus iure asperiores molestias iste dolore, animi dolorum maxime ducimus debitis est inventore totam vel. Eaque, minima aspernatur?
-                                </span>
-
-                                <span className="block text-gray-500 dark:text-gray-400">
-                                    Lorem ipsum &copy; <span id="year"></span>
-                                </span>
-
-                                <span className="flex justify-between text-white">
-                                    <a href="#" className="font-semibold"> Privacy Policy</a>
-                                </span>
-
-                                <span className="block text-gray-500 dark:text-gray-400">
-                                    Need help? <a href="#" className="font-semibold text-white"> Contact Us</a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+        <footer>
+            <div className="flex">
+                <div className="flex-1 text-center">
+                    <Link color="foreground" href="#" className="p-xl">
+                        Home
+                    </Link>
                 </div>
-            </footer>
-        </div>
+                <Divider
+                    orientation="vertical"
+                    className="h-xxl"
+                />
+                <div className="flex-1 text-center">
+                    <Link color="foreground" href="#" className="p-xl">
+                        Our Chalets
+                    </Link>
+                </div>
+                <Divider
+                    orientation="vertical"
+                    className="h-xxl"
+                />
+                <div className="flex-1 text-center">
+                    <Link color="foreground" href="#" className="p-xl">
+                        My Account
+                    </Link>
+                </div>
+            </div>
+            <div className="flex">
+                <div className="flex-1 text-center">
+                    <Card
+                        isBlurred
+                        className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+                        shadow="sm"
+                    >
+                        <CardBody>
+                            <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
+                                <div className="relative col-span-6 md:col-span-4">
+                                    <Image
+                                        alt="Album cover"
+                                        className="object-cover"
+                                        height={200}
+                                        shadow="md"
+                                        src="https://nextui.org/images/album-cover.png"
+                                        width="100%"
+                                    />
+                                </div>
+
+                                <div className="flex flex-col col-span-6 md:col-span-8">
+                                    <div className="flex justify-between items-start">
+                                        <div className="flex flex-col gap-0">
+                                            <h3 className="font-semibold text-foreground/90">Daily Mix</h3>
+                                            <p className="text-small text-foreground/80">12 Tracks</p>
+                                            <h1 className="text-large font-medium mt-2">Frontend Radio</h1>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex flex-col mt-3 gap-1">
+                                        <Slider
+                                            aria-label="Music progress"
+                                            classNames={{
+                                                track: "bg-default-500/30",
+                                                thumb: "w-2 h-2 after:w-2 after:h-2 after:bg-foreground",
+                                            }}
+                                            color="foreground"
+                                            defaultValue={33}
+                                            size="sm"
+                                        />
+                                        <div className="flex justify-between">
+                                            <p className="text-small">1:23</p>
+                                            <p className="text-small text-foreground/50">4:32</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex w-full items-center justify-center">
+                                        <Button
+                                            isIconOnly
+                                            className="data-[hover]:bg-foreground/10"
+                                            radius="full"
+                                            variant="light"
+                                        >
+                                        </Button>
+                                        <Button
+                                            isIconOnly
+                                            className="data-[hover]:bg-foreground/10"
+                                            radius="full"
+                                            variant="light"
+                                        >
+                                        </Button>
+                                        <Button
+                                            isIconOnly
+                                            className="w-auto h-auto data-[hover]:bg-foreground/10"
+                                            radius="full"
+                                            variant="light"
+                                        >
+                                        </Button>
+                                        <Button
+                                            isIconOnly
+                                            className="data-[hover]:bg-foreground/10"
+                                            radius="full"
+                                            variant="light"
+                                        >
+                                        </Button>
+                                        <Button
+                                            isIconOnly
+                                            className="data-[hover]:bg-foreground/10"
+                                            radius="full"
+                                            variant="light"
+                                        >
+                                        </Button>
+                                    </div>
+                                </div>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </div>
+                <div className="basis-2/6 flex-1 text-center">
+                    test
+                </div>
+            </div>
+        </footer>
     )
 }

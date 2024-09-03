@@ -2,6 +2,7 @@ import { Head } from "@/layouts/head";
 import { Footer } from "@/layouts/footer";
 import { useRef } from "react";
 import { Image } from "@nextui-org/image";
+import { Divider } from "@nextui-org/divider";
 
 import Autoplay from "embla-carousel-autoplay"
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
@@ -50,7 +51,7 @@ export default function IndexPage() {
       </div>
       
       <Card>
-        
+
       </Card>
       
       <Carousel
