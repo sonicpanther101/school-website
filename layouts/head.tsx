@@ -8,6 +8,8 @@ import {
   NavbarMenuItem
 } from "@nextui-org/navbar";
 
+import { useEffect, useState } from "react";
+
 import { ThemeSwitch } from "@/components/theme-switch";
 
 import Link from "next/link";
@@ -15,8 +17,28 @@ import { Button, ButtonGroup } from "@nextui-org/button";
 
 
 export const Head = () => {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar
+      isBlurred={false}
+      className={`fixed transition-all duration-250 ${isScrolled ? "shadow-md" : "bg-transparent"}`}>
       <NavbarBrand>
         <img
           src="/favicon.ico"
