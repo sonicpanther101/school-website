@@ -1,14 +1,24 @@
 import { Head } from "@/layouts/head";
 import { Footer } from "@/layouts/footer";
+
 import { useRef } from "react";
+
 import { Image } from "@nextui-org/image";
 import { Divider } from "@nextui-org/divider";
+import { Avatar } from "@nextui-org/avatar";
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 
 import Autoplay from "embla-carousel-autoplay"
 import useEmblaCarousel from 'embla-carousel-react'
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+
+import EmblaCarousel from './EmblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel'
 
 import { Card as Card2, CardContent } from "@/components/ui/card"
+
+const OPTIONS: EmblaOptionsType = {}
+const SLIDE_COUNT = 10
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 
 if (typeof window !== 'undefined') {
@@ -35,6 +45,7 @@ export default function IndexPage() {
   return (
     <>
       <Head />
+
       <div className="absolute w-full h-screen z-10 bg-background opacity-50 flex flex-col justify-center items-center">
       </div>
       <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center">
@@ -52,57 +63,105 @@ export default function IndexPage() {
       </div>
 
       { /*
-        temp
-        snow condition
-        weather
-        reviews
         card for each chalet, linking to chalets page
-        about
       */ }
-
-      <div className="flex flex-col md:flex-row m-xxl">
-        <Card className="flex-1 basis-[30%] shadow-md bg-secondary">
+      
+      { /* Stats */ }
+      <div className="flex flex-col md:flex-row m-lg md:m-xxl gap-xl">
+        <Card className="flex-1 shadow-md bg-secondary">
           <CardHeader>
             <h2 className="m-lg mb-sm font-bold text-xl">Temperature</h2>
           </CardHeader>
-          <CardBody className="flex flex-col md:flex-row">
-            <Image
-              className="flex-1"
+          <CardBody className="flex flex-row items-center">
+            <img
+              className="flex-1 object-contain h-full w-1/2 p-md rounded-full"
               alt="Thermomitor"
-              src="https://imgs.search.brave.com/ESCc0nA1OEE-WekIZgR9v-z8zXmylW3D63S4xa_cH-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTk1/NzkxNDE4L3ZlY3Rv/ci90aGVybW9tZXRl/ci12ZWN0b3ItZmxh/dC1kZXNpZ24uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVRL/T2JETnRKYlhjbmxD/UWEyMnNDMXlvNEpl/V0xNNDByRlRoLTNh/aHpEY2M9"
-            />
-            <h1 className="font-black flex-1">X℃</h1>
+              src="https://imgs.search.brave.com/ESCc0nA1OEE-WekIZgR9v-z8zXmylW3D63S4xa_cH-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTk1/NzkxNDE4L3ZlY3Rv/ci90aGVybW9tZXRl/ci12ZWN0b3ItZmxh/dC1kZXNpZ24uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVRL/T2JETnRKYlhjbmxD/UWEyMnNDMXlvNEpl/V0xNNDByRlRoLTNh/aHpEY2M9"></img>
+            <h1 className="font-black text-5xl mr-xl">-X℃</h1>
           </CardBody>
         </Card>
-        <div className="flex-1 basis-[5%]"></div>
-        <Card className="flex-1 basis-[30%] shadow-md bg-secondary">
+        <Card className="flex-1 shadow-md bg-secondary">
           <CardHeader>
-            <h2 className="m-lg mb-sm font-bold text-xl">Temperature</h2>
+            <h2 className="m-lg mb-sm font-bold text-xl">Slope Conditions</h2>
           </CardHeader>
-          <CardBody className="flex flex-col md:flex-row">
-            <Image
-              className="flex-1 basis-[50%]"
-              alt="Thermomitor"
-              src="https://imgs.search.brave.com/ESCc0nA1OEE-WekIZgR9v-z8zXmylW3D63S4xa_cH-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTk1/NzkxNDE4L3ZlY3Rv/ci90aGVybW9tZXRl/ci12ZWN0b3ItZmxh/dC1kZXNpZ24uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVRL/T2JETnRKYlhjbmxD/UWEyMnNDMXlvNEpl/V0xNNDByRlRoLTNh/aHpEY2M9"
-            />
-            <h1 className="font-black flex-1 basis-[50%]">X℃</h1>
+          <CardBody className="flex flex-row items-center">
+            <img
+              className="flex-1 object-contain h-full w-1/2 p-md rounded-full"
+              alt="Mountain"
+              src="https://www.shareicon.net/download/2016/01/01/696398_top.svg"></img>
+            <h1 className="font-black mr-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis libero officiis quibusdam sunt autem voluptatum ratione doloremque fugit molestiae eligendi dolores tempora labore velit illum, aut sit similique sint asperiores.</h1>
           </CardBody>
         </Card>
-        <div className="flex-1 basis-[5%]"></div>
-        <Card className="flex-1 basis-[30%] shadow-md bg-secondary">
+        <Card className="flex-1 shadow-md bg-secondary">
           <CardHeader>
-            <h2 className="m-lg mb-sm font-bold text-xl">Temperature</h2>
+            <h2 className="m-lg mb-sm font-bold text-xl">Weather</h2>
           </CardHeader>
-          <CardBody className="flex flex-col md:flex-row">
-            <Image
-              className="flex-1"
+          <CardBody className="flex flex-row items-center">
+            <img
+              className="flex-1 object-contain h-full w-1/2 rounded-full"
               alt="Thermomitor"
-              src="https://imgs.search.brave.com/ESCc0nA1OEE-WekIZgR9v-z8zXmylW3D63S4xa_cH-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTk1/NzkxNDE4L3ZlY3Rv/ci90aGVybW9tZXRl/ci12ZWN0b3ItZmxh/dC1kZXNpZ24uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVRL/T2JETnRKYlhjbmxD/UWEyMnNDMXlvNEpl/V0xNNDByRlRoLTNh/aHpEY2M9"
-            />
-            <h1 className="font-black flex-1">X℃</h1>
+              id="about"
+              src="https://images.vexels.com/media/users/3/154381/isolated/preview/95b254d1474b9a7c25e60536f82398a1-cloudy-weather-stroke-icon.png"></img>
+            <h1 className="font-black mr-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo expedita tenetur aspernatur voluptatem, quos vitae ipsum, hic illum neque quod facilis recusandae quas laboriosam aliquid possimus, deserunt dicta accusantium.</h1>
           </CardBody>
         </Card>
       </div>
+
+      { /* About */}
+      <div>
+        <h1 className="m-lg md:m-xxl font-bold text-3xl">About Us</h1>
+        <p className="m-lg md:m-xxl mb-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad laudantium voluptate incidunt, laboriosam explicabo, aspernatur sed saepe vero sapiente at omnis eum tempora dicta repellat corrupti, ab rerum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque molestiae laborum animi dicta adipisci dolores aut laudantium recusandae, labore quis, possimus quae sapiente. Voluptate debitis quae aperiam, at asperiores consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur nobis dolorum consequuntur quibusdam, voluptatem ipsum saepe vero quae ex aperiam enim distinctio repellendus temporibus aliquid quas minima laborum at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur tempore optio, obcaecati, dolore ipsum consectetur aliquid vitae repudiandae voluptate animi itaque, officiis quos. Distinctio, fuga dolorem. Voluptas est esse cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione ducimus ea sit nobis, dicta officia. Consequuntur atque amet iusto recusandae animi! Vel, accusamus ad odit in fugit eligendi dolor.</p>
+        <p className="m-lg md:m-xxl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad laudantium voluptate incidunt, laboriosam explicabo, aspernatur sed saepe vero sapiente at omnis eum tempora dicta repellat corrupti, ab rerum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque molestiae laborum animi dicta adipisci dolores aut laudantium recusandae, labore quis, possimus quae sapiente. Voluptate debitis quae aperiam, at asperiores consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur nobis dolorum consequuntur quibusdam, voluptatem ipsum saepe vero quae ex aperiam enim distinctio repellendus temporibus aliquid quas minima laborum at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur tempore optio, obcaecati, dolore ipsum consectetur aliquid vitae repudiandae voluptate animi itaque, officiis quos. Distinctio, fuga dolorem. Voluptas est esse cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione ducimus ea sit nobis, dicta officia. Consequuntur atque amet iusto recusandae animi! Vel, accusamus ad odit in fugit eligendi dolor.</p>
+      </div>
+
+      { /* Reviews */ }
+      <div className="flex flex-col md:flex-row m-lg md:m-xxl gap-xl">
+        <Card className="flex-1 shadow-md bg-secondary">
+          <CardHeader className="justify-between flex gap-5 m-lg mb-sm">
+            <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" className="flex-1 basis-[20%]" />
+            <div className="justify-center flex-1 basis-[80%]">
+              <h4 className="text-small font-semibold leading-none ml-lg">First name Last name</h4>
+            </div>
+          </CardHeader>
+          <CardBody className="px-3 py-0 text-small m-md">
+            <p className="mr-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nobis provident dolorum doloremque delectus amet eligendi excepturi laborum nisi natus magnam eaque fugiat, rerum cumque reiciendis sequi accusantium? Adipisci, fugit.
+            </p>
+          </CardBody>
+        </Card>
+
+        <Card className="flex-1 shadow-md bg-secondary">
+          <CardHeader className="justify-between flex gap-5 m-lg mb-sm">
+            <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" className="flex-1 basis-[20%]" />
+            <div className="justify-center flex-1 basis-[80%]">
+              <h4 className="text-small font-semibold leading-none ml-lg">First name Last name</h4>
+            </div>
+          </CardHeader>
+          <CardBody className="px-3 py-0 text-small m-md">
+            <p className="mr-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nobis provident dolorum doloremque delectus amet eligendi excepturi laborum nisi natus magnam eaque fugiat, rerum cumque reiciendis sequi accusantium? Adipisci, fugit.
+            </p>
+          </CardBody>
+        </Card>
+
+        <Card className="flex-1 shadow-md bg-secondary">
+          <CardHeader className="justify-between flex gap-5 m-lg mb-sm">
+            <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" className="flex-1 basis-[20%]" />
+            <div className="justify-center flex-1 basis-[80%]">
+              <h4 className="text-small font-semibold leading-none ml-lg">First name Last name</h4>
+            </div>
+          </CardHeader>
+          <CardBody className="px-3 py-0 text-small m-md">
+            <p className="mr-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nobis provident dolorum doloremque delectus amet eligendi excepturi laborum nisi natus magnam eaque fugiat, rerum cumque reiciendis sequi accusantium? Adipisci, fugit.
+            </p>
+          </CardBody>
+        </Card>
+      </div>
+
+      { /* Chalets */}
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      
       <Footer/>
     </>
   );
