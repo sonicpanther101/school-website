@@ -8,10 +8,6 @@ import { parseDate } from "@internationalized/date";
 
 import { I18nProvider } from "@react-aria/i18n";
 
-import { usePress } from 'react-aria';
-
-import { useState } from "react";
-
 if (typeof window !== 'undefined') {
     const observer = new MutationObserver(() => {
         if (document.documentElement.getAttribute('data-theme') === "dark") {
@@ -33,17 +29,25 @@ let XXXXX_date = {
 };
 
 function handleBooking(chalet: string) {
-    
-    console.log(XXXXX_date.end.compare(XXXXX_date.start));
-    console.log(XXXXX_date.start.toDate("Pacific/Auckland").getDay());
-    console.log(XXXXX_date.end.toDate("Pacific/Auckland").getDay());
 
-    if (XXXXX_date.end.compare(XXXXX_date.start) <= 2 &&
-        XXXXX_date.end.compare(XXXXX_date.start) >= 0 &&
-        XXXXX_date.start.toDate("Pacific/Auckland").getDay() % 5 <= 1 &&
-        XXXXX_date.end.toDate("Pacific/Auckland").getDay() % 5 <= 1 &&
-        XXXXX_date.start.toDate("Pacific/Auckland").getDay() != 1 &&
-        XXXXX_date.end.toDate("Pacific/Auckland").getDay() != 1) {
+    let date_range;
+
+    if (chalet == "XXXX") {
+        date_range = XXXXX_date;
+    } else {
+        return
+    }
+    
+    console.log(date_range.end.compare(date_range.start));
+    console.log(date_range.start.toDate("Pacific/Auckland").getDay());
+    console.log(date_range.end.toDate("Pacific/Auckland").getDay());
+
+    if (date_range.end.compare(date_range.start) <= 2 &&
+        date_range.end.compare(date_range.start) >= 0 &&
+        date_range.start.toDate("Pacific/Auckland").getDay() % 5 <= 1 &&
+        date_range.end.toDate("Pacific/Auckland").getDay() % 5 <= 1 &&
+        date_range.start.toDate("Pacific/Auckland").getDay() != 1 &&
+        date_range.end.toDate("Pacific/Auckland").getDay() != 1) {
         console.log("valid");
     } else {
         console.log("invalid");
@@ -52,12 +56,6 @@ function handleBooking(chalet: string) {
 
 
 export default function IndexPage() { 
-
-    let [events, setEvents] = useState([]);
-    let { pressProps, isPressed } = usePress({
-        onPress: () =>
-            console.log("test")
-    });
 
     return (
         <I18nProvider locale = "en-GB">
