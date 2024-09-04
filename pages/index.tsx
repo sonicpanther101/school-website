@@ -7,18 +7,14 @@ import { Image } from "@nextui-org/image";
 import { Divider } from "@nextui-org/divider";
 import { Avatar } from "@nextui-org/avatar";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+import { Button } from "@nextui-org/button";
 
+import AutoScroll from "embla-carousel-auto-scroll";
 import Autoplay from "embla-carousel-autoplay"
 import useEmblaCarousel from 'embla-carousel-react'
 
-import EmblaCarousel from './EmblaCarousel'
-import { EmblaOptionsType } from 'embla-carousel'
 
 import { Card as Card2, CardContent } from "@/components/ui/card"
-
-const OPTIONS: EmblaOptionsType = {}
-const SLIDE_COUNT = 10
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 
 if (typeof window !== 'undefined') {
@@ -39,8 +35,12 @@ if (typeof window !== 'undefined') {
 export default function IndexPage() {
 
   const [emblaRef] = useEmblaCarousel({
-    loop: false, duration: 50
+    loop: true, duration: 50
   }, [Autoplay({ delay: 10000 })])
+
+  const [emblaRef2] = useEmblaCarousel({
+    loop: true
+  }, [AutoScroll()])
 
   return (
     <>
@@ -55,7 +55,6 @@ export default function IndexPage() {
 
       <div className="w-full h-screen overflow-hidden" ref={emblaRef}>
         <div className="flex">
-          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
           <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
           <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
           <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
@@ -160,7 +159,64 @@ export default function IndexPage() {
       </div>
 
       { /* Chalets */}
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <div className="w-full h-[80vh] mb-[15rem] cursor-default select-none" ref={emblaRef2}>
+        <div className="flex">
+          <div
+            className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
+            style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}
+          >
+            <div className="flex-1"></div>
+            <div className="flex-1"></div>
+            <Card className="flex-1 m-lg p-lg mb-[-5rem]">
+              <CardHeader className="font-bold text-3xl">
+                XXX chalet
+              </CardHeader>
+              <CardBody>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
+              </CardBody>
+              <CardFooter className="justify-end">
+                <Button className="p-lg text-lg">Book Now</Button>
+              </CardFooter>
+            </Card>
+          </div>
+          <div
+            className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
+            style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}
+          >
+            <div className="flex-1"></div>
+            <div className="flex-1"></div>
+            <Card className="flex-1 m-lg p-lg mb-[-5rem]">
+              <CardHeader className="font-bold text-3xl">
+                XXX chalet
+              </CardHeader>
+              <CardBody>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
+              </CardBody>
+              <CardFooter className="justify-end">
+                <Button className="p-lg text-lg">Book Now</Button>
+              </CardFooter>
+            </Card>
+          </div>
+          <div
+            className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
+            style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}
+          >
+            <div className="flex-1"></div>
+            <div className="flex-1"></div>
+            <Card className="flex-1 m-lg p-lg mb-[-5rem]">
+              <CardHeader className="font-bold text-3xl">
+                XXX chalet
+              </CardHeader>
+              <CardBody>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
+              </CardBody>
+              <CardFooter className="justify-end">
+                <Button className="p-lg text-lg">Book Now</Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </div>
       
       <Footer/>
     </>
