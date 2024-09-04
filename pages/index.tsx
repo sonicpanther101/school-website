@@ -159,7 +159,7 @@ export default function IndexPage() {
       </div>
 
       { /* Chalets */}
-      <div className="w-full h-[80vh] mb-[15rem] cursor-default select-none" ref={emblaRef2}>
+      <div className="w-full h-[80vh] mb-[15rem] overflow-hidden md:overflow-visible cursor-default select-none" ref={emblaRef2}>
         <div className="flex">
           <div
             className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
@@ -167,15 +167,15 @@ export default function IndexPage() {
           >
             <div className="flex-1"></div>
             <div className="flex-1"></div>
-            <Card className="flex-1 m-lg p-lg mb-[-5rem]">
+            <Card className="flex-1 flex-grow m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
               <CardHeader className="font-bold text-3xl">
                 XXX chalet
               </CardHeader>
-              <CardBody>
+              <CardBody className="mb-lg md:mb-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
               </CardBody>
               <CardFooter className="justify-end">
-                <Button className="p-lg text-lg">Book Now</Button>
+                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
               </CardFooter>
             </Card>
           </div>
@@ -185,15 +185,15 @@ export default function IndexPage() {
           >
             <div className="flex-1"></div>
             <div className="flex-1"></div>
-            <Card className="flex-1 m-lg p-lg mb-[-5rem]">
+            <Card className="flex-1 flex-grow m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
               <CardHeader className="font-bold text-3xl">
                 XXX chalet
               </CardHeader>
-              <CardBody>
+              <CardBody className="mb-lg md:mb-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
               </CardBody>
               <CardFooter className="justify-end">
-                <Button className="p-lg text-lg">Book Now</Button>
+                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
               </CardFooter>
             </Card>
           </div>
@@ -203,15 +203,15 @@ export default function IndexPage() {
           >
             <div className="flex-1"></div>
             <div className="flex-1"></div>
-            <Card className="flex-1 m-lg p-lg mb-[-5rem]">
+            <Card className="flex-1 flex-grow m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
               <CardHeader className="font-bold text-3xl">
                 XXX chalet
               </CardHeader>
-              <CardBody>
+              <CardBody className="mb-lg md:mb-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
               </CardBody>
               <CardFooter className="justify-end">
-                <Button className="p-lg text-lg">Book Now</Button>
+                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
               </CardFooter>
             </Card>
           </div>

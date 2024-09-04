@@ -8,7 +8,7 @@ export const Footer = () => {
         <footer>
             <div className="flex flex-col md:flex-row p-xl pt-xxl bg-secondary">
                 <div className="flex-1 text-center my-sm">
-                    <Link color="foreground" href="#" className="p-md">
+                    <Link color="foreground" href="/" className="p-md">
                         Home
                     </Link>
                 </div>
@@ -17,7 +17,7 @@ export const Footer = () => {
                     className="h-xl hidden md:inline"
                 />
                 <div className="flex-1 text-center my-sm">
-                    <Link color="foreground" href="#" className="p-md">
+                    <Link color="foreground" href="/chalets" className="p-md">
                         Our Chalets
                     </Link>
                 </div>
@@ -26,8 +26,8 @@ export const Footer = () => {
                     className="h-xl hidden md:inline"
                 />
                 <div className="flex-1 text-center my-sm">
-                    <Link color="foreground" href="#" className="p-md">
-                        My Account
+                    <Link color="foreground" href="/register" className="p-md">
+                        Sign Up
                     </Link>
                 </div>
             </div>
@@ -52,7 +52,7 @@ export const Footer = () => {
                                     <h3 className="text-2xl font-medium">Maunga Club</h3>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate aspernatur eum qui eveniet architecto culpa animi adipisci reiciendis accusantium, totam nemo fugiat at voluptas soluta dignissimos magni commodi pariatur.</p>
                                     <br />
-                                    <Link color="foreground" href="http://localhost:3000#about" className="p-md">
+                                    <Link color="foreground" href="/#about" className="p-md">
                                         About Us
                                     </Link>
                                 </div>
