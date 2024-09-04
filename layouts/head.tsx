@@ -49,7 +49,7 @@ export const Head = () => {
           alt="Logo"
           width={32}
           height={32}
-          className="cursor-pointer rounded-full"
+          className="cursor-pointer rounded-full ml-xl"
         />
         <Link href="#" className="font-bold text-inherit pl-sm cursor-pointer">
           Maunga Club
