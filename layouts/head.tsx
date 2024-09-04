@@ -38,19 +38,6 @@ export const Head = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
-
   return (
     <Navbar
       isBlurred={false}
@@ -102,9 +89,15 @@ export const Head = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat" className="mr-xl p-sm rounded-full bg-background">
+          <Button as={Link} color="primary" href="#" variant="flat" className="mr-xl p-sm rounded-full bg-secondary">
             Sign Up
           </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <NavbarMenuToggle
+            icon={isMenuOpen ? "🞤" : "≡"}
+            className={`w-xl h-xl md:hidden mr-xl rounded-full bg-secondary text-lg font-black ${isMenuOpen ? "rotate-45" : ""}`}
+          />
         </NavbarItem>
         <Divider
           orientation="vertical"
@@ -113,28 +106,31 @@ export const Head = () => {
         <NavbarItem>
           <ThemeSwitch className="ml-xl hidden md:flex"/>
         </NavbarItem>
-        <NavbarItem>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="md:hidden"
-          />
-        </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              className="w-full"
-              href="#"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+      <NavbarMenu className="flex items-center flex-col">
+      <NavbarMenuItem className="flex-1 basis-1/10"></NavbarMenuItem>
+        <NavbarMenuItem className="flex-1">
+          <Link color="foreground" href="#" className="p-md">
+            Home
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem className="flex-1">
+          <Link color="foreground" href="#" className="p-md">
+            Our Chalets
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem className="flex-1">
+          <Link href="#" className="p-md">
+            My Account
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem className="flex-1">
+          <Link href="#" className="p-md">
+            Login
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem className="flex-1 basis-1/2"></NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
