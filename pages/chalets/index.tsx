@@ -115,7 +115,13 @@ export default function IndexPage() {
 
     const [emblaRef] = useEmblaCarousel({
         loop: true, duration: 50
-    }, [Autoplay({ delay: 5000 })])
+    }, [Autoplay({ delay: 3000 })])
+    const [emblaRef1] = useEmblaCarousel({
+        loop: true, duration: 50
+    }, [Autoplay({ delay: 3000 })])
+    const [emblaRef2] = useEmblaCarousel({
+        loop: true, duration: 50
+    }, [Autoplay({ delay: 3000 })])
 
     return (
         <I18nProvider locale="en-GB">
@@ -124,30 +130,27 @@ export default function IndexPage() {
             <div className="absolute w-full h-[30vh] z-10 flex flex-col justify-center items-center">
                 <h1 className="text-5xl md:text-7xl font-black text-center select-none">Our Chalets</h1>
             </div>
-            <div className="h-[30vh]"></div>
+            <div className="h-[25vh]"></div>
+
             <div>
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none">XXXXX Chalet</h1>
-                <div className="w-full md:w-[140%] h-[100vh] overflow-hidden md:ml-[-20%]" ref={emblaRef}>
+                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">XXXXX Chalet</h1>
+                <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef}>
                     <div className="flex">
                         <img
-                            className="w-full h-[70vh] object-cover md:rounded-2xl m-[5%] shadow-2xl"
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                             src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
                             alt="chalet" />
                         <img
-                            className="w-full h-[70vh] object-cover md:rounded-2xl m-[5%] shadow-2xl"
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                             src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
                             alt="chalet" />
                         <img
-                            className="w-full h-[70vh] object-cover md:rounded-2xl m-[5%] shadow-2xl"
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                             src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
                             alt="chalet" />
                     </div>
                 </div>
-                {/* <img
-                    className="w-[90%] h-[70vh] object-cover rounded-2xl m-[5%] shadow-2xl"
-                    src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
-                    alt="chalet" /> */}
-                <Card className="w-[95%] object-cover rounded-2xl m-[2.5%] mt-[-100%] md:mt-[-20%] shadow-2xl p-md flex flex-col md:flex-row gap-md">
+                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
                     <div className="flex-1 basis-[60%]">
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
@@ -216,12 +219,24 @@ export default function IndexPage() {
             </div>
 
             <div>
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none">XXXXX Chalet</h1>
-                <img
-                    className="w-[90%] h-[70vh] object-cover rounded-2xl m-[5%] shadow-2xl"
-                    src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
-                    alt="chalet" />
-                <Card className="w-[95%] object-cover rounded-2xl m-[2.5%] mt-[-10%] shadow-2xl p-md flex flex-col md:flex-row gap-md">
+                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">XXXXX Chalet</h1>
+                <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef1}>
+                    <div className="flex">
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                            alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                            alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                            alt="chalet" />
+                    </div>
+                </div>
+                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
                     <div className="flex-1 basis-[60%]">
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
@@ -289,13 +304,25 @@ export default function IndexPage() {
                 </Card>
             </div>
 
-            <div className="mb-x4l">
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none">XXXXX Chalet</h1>
-                <img
-                    className="w-[90%] h-[70vh] object-cover rounded-2xl m-[5%] shadow-2xl"
-                    src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
-                    alt="chalet" />
-                <Card className="w-[95%] object-cover rounded-2xl m-[2.5%] mt-[-10%] shadow-2xl p-md flex flex-col md:flex-row gap-md">
+            <div className="mb-x3l">
+                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">XXXXX Chalet</h1>
+                <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef2}>
+                    <div className="flex">
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                            alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                            alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                            alt="chalet" />
+                    </div>
+                </div>
+                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
                     <div className="flex-1 basis-[60%]">
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
@@ -383,6 +410,7 @@ export default function IndexPage() {
                     </CardFooter>
                 </Card>
             </div>
+
         </I18nProvider>
     )
 }
