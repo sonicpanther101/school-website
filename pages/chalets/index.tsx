@@ -1,15 +1,17 @@
 import { Head } from "@/layouts/head";
 import { Footer } from "@/layouts/footer";
+
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { DateRangePicker } from "@nextui-org/date-picker";
 import { Input } from "@nextui-org/input";
+import Link from "next/link";
 
 import { parseDate } from "@internationalized/date";
 
 import { I18nProvider } from "@react-aria/i18n";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from 'embla-carousel-react';
@@ -26,6 +28,19 @@ if (typeof window !== 'undefined') {
     observer.observe(document.documentElement, {
         attributes: true,
         attributeFilter: ['data-theme'],
+    });
+}
+
+function signedInCheck(data: string) {
+    console.log(data)
+
+    const elements = document.querySelectorAll(".signed-in, .signed-out");
+    elements.forEach(element => {
+        if (data === "true") {
+            element.classList.toggle("hidden", element.classList.contains("signed-out"));
+        } else {
+            element.classList.toggle("hidden", element.classList.contains("signed-in"));
+        }
     });
 }
 
@@ -113,6 +128,22 @@ export default function IndexPage() {
     const [isXXXXXInvalidCapacity, setIsXXXXXInvalidCapacity] = useState(false);
     const [isXXXXXInvalidDateRange, setIsXXXXXInvalidDateRange] = useState(false);
 
+    const [signedIn, setSignedIn] = useState(null);
+
+    useEffect(() => {
+        const storedData = localStorage.getItem('signed-in');
+        if (storedData) {
+            setSignedIn(JSON.parse(storedData));
+            signedInCheck(storedData);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (signedIn !== null) {
+            localStorage.setItem('signed-in', JSON.stringify(signedIn));
+        }
+    }, [signedIn]);
+
     const [emblaRef] = useEmblaCarousel({
         loop: true, duration: 50
     }, [Autoplay({ delay: 3000 })])
@@ -155,7 +186,7 @@ export default function IndexPage() {
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
-                        <CardBody>
+                        <CardBody className="min-h-[20vh]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
                         </CardBody>
                     </div>
@@ -171,9 +202,9 @@ export default function IndexPage() {
                             description="Pick a range of dates between Friday and Sunday"
                             isInvalid={isXXXXXInvalidDateRange}
                             errorMessage="Please enter dates between Friday and Sunday"
-                            className="max-w-xs bg-secondary p-sm rounded-xl"
+                            className="signed-in hidden max-w-xs bg-secondary p-sm rounded-xl"
                         />
-                        <div className="flex gap-md">
+                        <div className="signed-in hidden flex gap-md">
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Adults"
@@ -213,7 +244,8 @@ export default function IndexPage() {
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("XXXXX")} className="p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("XXXXX")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
             </div>
@@ -241,7 +273,7 @@ export default function IndexPage() {
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
-                        <CardBody>
+                        <CardBody className="min-h-[20vh]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
                         </CardBody>
                     </div>
@@ -257,9 +289,9 @@ export default function IndexPage() {
                             description="Pick a range of dates between Friday and Sunday"
                             isInvalid={isXXXXXInvalidDateRange}
                             errorMessage="Please enter dates between Friday and Sunday"
-                            className="max-w-xs bg-secondary p-sm rounded-xl"
+                            className="signed-in hidden max-w-xs bg-secondary p-sm rounded-xl"
                         />
-                        <div className="flex gap-md">
+                        <div className="signed-in hidden flex gap-md">
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Adults"
@@ -299,7 +331,8 @@ export default function IndexPage() {
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("XXXXX")} className="p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("XXXXX")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
             </div>
@@ -327,7 +360,7 @@ export default function IndexPage() {
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
-                        <CardBody>
+                        <CardBody className="min-h-[20vh]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
                         </CardBody>
                     </div>
@@ -343,9 +376,9 @@ export default function IndexPage() {
                             description="Pick a range of dates between Friday and Sunday"
                             isInvalid={isXXXXXInvalidDateRange}
                             errorMessage="Please enter dates between Friday and Sunday"
-                            className="max-w-xs bg-secondary p-sm rounded-xl"
+                            className="signed-in hidden max-w-xs bg-secondary p-sm rounded-xl"
                         />
-                        <div className="flex gap-md">
+                        <div className="signed-in hidden flex gap-md">
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Adults"
@@ -385,7 +418,8 @@ export default function IndexPage() {
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("XXXXX")} className="p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("XXXXX")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
             </div>
