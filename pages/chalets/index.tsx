@@ -41,7 +41,9 @@ function handleBooking(chalet: string) {
     if (XXXXX_date.end.compare(XXXXX_date.start) <= 2 &&
         XXXXX_date.end.compare(XXXXX_date.start) >= 0 &&
         XXXXX_date.start.toDate("Pacific/Auckland").getDay() % 5 <= 1 &&
-        XXXXX_date.end.toDate("Pacific/Auckland").getDay() % 5 <= 1) {
+        XXXXX_date.end.toDate("Pacific/Auckland").getDay() % 5 <= 1 &&
+        XXXXX_date.start.toDate("Pacific/Auckland").getDay() != 1 &&
+        XXXXX_date.end.toDate("Pacific/Auckland").getDay() != 1) {
         console.log("valid");
     } else {
         console.log("invalid");
