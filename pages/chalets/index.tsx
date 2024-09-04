@@ -156,6 +156,7 @@ export default function IndexPage() {
 
     return (
         <I18nProvider locale="en-GB">
+        <div className="overflow-hidden">
             <Head />
 
             <div className="absolute w-full h-[30vh] z-10 flex flex-col justify-center items-center">
@@ -444,7 +445,7 @@ export default function IndexPage() {
                     </CardFooter>
                 </Card>
             </div>
-
+        </div>
         </I18nProvider>
     )
 }

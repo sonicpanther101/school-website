@@ -40,7 +40,7 @@ export default function IndexPage() {
   }, [AutoScroll()])
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Head />
 
       <div className="absolute w-full h-screen z-10 bg-background opacity-50 flex flex-col justify-center items-center">
@@ -216,6 +216,6 @@ export default function IndexPage() {
       </div>
       
       <Footer/>
-    </>
+    </div>
   );
 }
