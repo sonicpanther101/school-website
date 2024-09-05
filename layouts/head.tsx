@@ -17,9 +17,47 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import Link from "next/link";
 import { Button, ButtonGroup } from "@nextui-org/button";
 
+function signedInCheck(data: string) {
+  console.log(data)
+
+  const elements = document.querySelectorAll(".signed-in, .signed-out");
+  elements.forEach(element => {
+    if (data === "true") {
+      element.classList.toggle("hidden", element.classList.contains("signed-out"));
+    } else {
+      element.classList.toggle("hidden", element.classList.contains("signed-in"));
+    }
+  });
+}
+
 export const Head = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const [signedIn, setSignedIn] = useState(null);
+
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    const storedName = localStorage.getItem('first-name');
+    if (storedName) {
+      setName(storedName);
+    }
+  }, []);
+
+  useEffect(() => {
+    const storedData = localStorage.getItem('signed-in');
+    if (storedData) {
+      setSignedIn(JSON.parse(storedData));
+      signedInCheck(storedData);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (signedIn !== null) {
+      localStorage.setItem('signed-in', JSON.stringify(signedIn));
+    }
+  }, [signedIn]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,10 +114,15 @@ export const Head = () => {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem>
+        <NavbarItem className="signed-out">
           <Button as={Link} color="primary" href="/register" variant="flat" className="mr-xl p-sm rounded-full bg-secondary">
             Sign Up
           </Button>
+        </NavbarItem>
+        <NavbarItem className="signed-in">
+          <h1 color="primary" className="mr-xl p-sm rounded-full">
+            Hi, {name}!
+          </h1>
         </NavbarItem>
         <NavbarItem>
           <NavbarMenuToggle
