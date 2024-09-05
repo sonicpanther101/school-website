@@ -96,7 +96,7 @@ export const Head = () => {
 
       <NavbarContent className="gap-4 hidden md:flex" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="p-xl pb-md">
+          <Link href="/" className="p-xl pb-md">
             Home
           </Link>
         </NavbarItem>
@@ -105,7 +105,7 @@ export const Head = () => {
           className="h-xl"
         />
         <NavbarItem>
-          <Link color="foreground" href="/chalets" className="p-xl pb-md">
+          <Link href="/chalets" className="p-xl pb-md">
             Our Chalets
           </Link>
         </NavbarItem>
@@ -113,12 +113,12 @@ export const Head = () => {
 
       <NavbarContent justify="end">
         <NavbarItem className="signed-out">
-          <Button as={Link} color="primary" href="/register" variant="flat" className="mr-xl p-sm rounded-full bg-secondary">
+          <Button as={Link} href="/register" variant="flat" className="mr-xl p-sm rounded-full bg-secondary">
             Sign Up
           </Button>
         </NavbarItem>
         <NavbarItem className="hidden signed-in">
-          <h1 color="primary" className="mr-xl p-sm rounded-full">
+          <h1 className="mr-xl p-sm rounded-full">
             Hi, {name}!
           </h1>
         </NavbarItem>
@@ -140,12 +140,12 @@ export const Head = () => {
       <NavbarMenu className="flex items-center flex-col">
       <NavbarMenuItem className="flex-1 basis-1/10"></NavbarMenuItem>
         <NavbarMenuItem className="flex-1">
-          <Link color="foreground" href="/" className="p-md">
+          <Link href="/" className="p-md">
             Home
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem className="flex-1">
-          <Link color="foreground" href="/chalets" className="p-md">
+          <Link href="/chalets" className="p-md">
             Our Chalets
           </Link>
         </NavbarMenuItem>

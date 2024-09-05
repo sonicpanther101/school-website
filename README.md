@@ -153,6 +153,7 @@ And also by commenting on features that are not yet implemented.
 I have used [https://validator.w3.org/](https://validator.w3.org/) to validate my website. When I ran it first, I found that it had a few errors.
 ![w3c validation](public/image-18.png)
 
+
 Examples of efficient tools include:
 Validating HTML and CSS
 Optimising images and other media used on the site (Compress images using https://tinypng.com/)
