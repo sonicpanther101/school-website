@@ -200,7 +200,7 @@ export default function IndexPage() {
             </div>
             <div className="h-[25vh]"></div>
 
-            <Card className="w-2/3 mx-auto">
+            <Card className="w-11/12 md:w-2/3 mx-auto">
                     <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Details</h1>
                     <p className="m-xl">• Only Club members can access the chalets.<br />
                         • All chalet bookings must be from Friday to Sunday.<br />

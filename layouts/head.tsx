@@ -89,7 +89,7 @@ export const Head = () => {
             alt="Logo"
             width={200}
             height={50}
-            className="cursor-pointer rounded-full ml-xl"
+            className="cursor-pointer rounded-full md:ml-xl"
           />
         </Link>
       </NavbarBrand>
