@@ -87,6 +87,8 @@ export default function IndexPage() {
             localStorage.setItem('signed-in', JSON.stringify(true));
             localStorage.setItem('first-name', firstName);
 
+            // Send registration data to maungaclub@maungaclub.maungaclub
+
             window.location.href = '/';
         }
     };
