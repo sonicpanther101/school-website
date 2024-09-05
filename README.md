@@ -63,15 +63,8 @@ I have demonstrated use of conventions appropriate for the purpose of the websit
 - Proof of the use of Vercel to deploy the website<br/>![proof of the use of Vercel to deploy the website](image-2.png)
 - Proof of the use of Tailwind CSS to style the website (Tailwind CSS is the CSS-like classes each element has)<br/>![proof of the use of Tailwind CSS to style the website](image-3.png)
 - Proof of the use of HTML semantics in the website<br/>![Header](image-4.png)![Footer](image-5.png)
-- Evidence of using global colour schemes<br/>![Evidence of using global colour schemes](image-6.png)
-- Evidence of getting feedback from end-users and using this feedback to improve the website design
-
-This means making sure that you consistently apply conventions in a way that improves your website.
-For example, you could do the following:
-Apply design elements in such a way that the website is able to achieve its purpose, is appropriate and appealing to the end users.
-Ways in which you could achieve this include
-Trialling different design elements
-
+- Evidence of getting feedback from end-users and using this feedback to improve the website design <br/>[Github - Issues](https://github.com/sonicpanther101/school-website/issues?q=is%3Aissue+is%3Aclosed)
+- Using the popular [Catppuccin theme](https://github.com/catppuccin/catppuccin) to style the website<br/>![Using the Catppuccin theme to style the website](image-6.png)
 
 Design elements include:
 Colour
@@ -86,6 +79,10 @@ Repetition
 Images
 
 ### Evidence of using information I gathered from TESTING to improve the quality of the website
+
+When testing the website with a screen reader, I found that many images did not have alt text. I then added explanetory alt text to all images.
+<br/>
+
 
 (ie to improve what the website looks like and how well it works).
 

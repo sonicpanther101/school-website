@@ -219,19 +219,19 @@ export default function IndexPage() {
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/bunk_room.jpg?raw=true"
-                            alt="chalet" />
+                            alt="kakapo chalet bunk room" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/cabin_exterior.jpg?raw=true"
-                            alt="chalet" />
+                            alt="kakapo chalet cabin exterior" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/cabin_view.jpg?raw=true"
-                                alt="chalet" />
+                                alt="kakapo chalet cabin view" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/hallway.jpg?raw=true"
-                            alt="chalet" />
+                            alt="kakapo chalet hallway" />
                     </div>
                 </div>
                 <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
@@ -314,19 +314,19 @@ export default function IndexPage() {
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/adult_bedroom.jpg?raw=true"
-                            alt="chalet" />
+                            alt="kereru chalet adult bedroom" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/cabin_exterior.jpg?raw=true"
-                            alt="chalet" />
+                            alt="kereru chalet cabin exterior" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/kids_bedroom.jpg?raw=true"
-                                alt="chalet" />
+                                alt="kereru chalet kid bedroom" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/kitchen.jpg?raw=true"
-                            alt="chalet" />
+                            alt="kereru chalet kitchen" />
                     </div>
                 </div>
                 <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
@@ -410,19 +410,19 @@ export default function IndexPage() {
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/adult_bedroom.jpg?raw=true"
-                            alt="chalet" />
+                            alt="pukeko chalet adult bedroom" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/bathroom.jpg?raw=true"
-                            alt="chalet" />
+                            alt="pukeko chalet bathroom" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/chalet_exterior.jpg?raw=true"
-                                alt="chalet" />
+                                alt="pukeko chalet exterior" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
                                 src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/chalet_view.jpg?raw=true"
-                            alt="chalet" />
+                            alt="pukeko chalet view" />
                     </div>
                 </div>
                 <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
