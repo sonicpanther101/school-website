@@ -152,13 +152,17 @@ And also by commenting on features that are not yet implemented.
 
 I have used [https://validator.w3.org/](https://validator.w3.org/) to validate my website. When I ran it first, I found that it had a few errors.
 ![w3c validation](public/image-18.png)
+I went ahead and fixed these errors however I cannot fix some due to Next.js being ahead of the validator in terms of convention.
+![change 1](public/image-20.png)
+![change 2](public/image-21.png)
 
-
-Examples of efficient tools include:
-Validating HTML and CSS
-Optimising images and other media used on the site (Compress images using https://tinypng.com/)
+I have optimised my website by optimising the load method for images and other media by loading them after the page has loaded. This means that the website loads faster and is usable before the image is loaded. This might seem like it would be bad, however none of the images in the website are necessary for the website to work/be usable. This is good for people who have a slow connection and don't want to wait for the images to load, and can have them loaded in the background, devaliditating the need for images to be compressed to a lower quality to load faster.
 
 ### Evidence of continually improving my website throughout the design, development and testing process
+
+I have logged my continuoal improvements to my website throughout the design, development and testing process by using Github to save my work, showing each change made to the website at each step. You can find my work here: [Github - Commits](https://github.com/sonicpanther101/school-website/commits). By clicking on the commit, you can see the files that were changed.
+
+
 
 Do this to ensure the website is of a high quality.
 
@@ -171,13 +175,6 @@ Create more pages
 Continue ..
 
 Keep evidence showing how you tested and made improvements. 
-
-## Technologies Used
-
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://typescriptlang.org)
-- [Framer Motion](https://framer.com/motion)
-- [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## Licence
 
