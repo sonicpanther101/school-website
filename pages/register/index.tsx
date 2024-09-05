@@ -109,7 +109,7 @@ export default function IndexPage() {
         <div className="overflow-hidden">
             <Head />
 
-            <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[85vh] lg:h-[70vh] flex flex-col">
+            <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[115vh] lg:h-[85vh] flex flex-col">
                 <CardHeader className="flex">
                     <h1 className="text-5xl font-black m-xl">Register</h1>
                 </CardHeader>

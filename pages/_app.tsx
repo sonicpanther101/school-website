@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider navigate={router.push}>
       <NextThemesProvider>
+        <title>Maunga Club</title>
         <Component {...pageProps} />
       </NextThemesProvider>
     </NextUIProvider>

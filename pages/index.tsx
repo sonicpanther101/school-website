@@ -1,7 +1,9 @@
 import { Head } from "@/layouts/head";
 import { Footer } from "@/layouts/footer";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
+
+import { cn } from "@/lib/utils";
 
 import { Image } from "@nextui-org/image";
 import { Divider } from "@nextui-org/divider";
@@ -19,8 +21,14 @@ if (typeof window !== 'undefined') {
   const observer = new MutationObserver(() => {
     if (document.documentElement.getAttribute('data-theme') === "dark") {
       document.documentElement.classList.add("dark");
+      for (let i = 0; i < document.getElementsByClassName("to-invert").length; i++) {
+        document.getElementsByClassName("to-invert")[i].classList.add("invert");
+      }
     } else if (document.documentElement.getAttribute('data-theme') === "light") {
       document.documentElement.classList.remove("dark");
+      for (let i = 0; i < document.getElementsByClassName("to-invert").length; i++) {
+        document.getElementsByClassName("to-invert")[i].classList.remove("invert");
+      }
     }
   });
 
@@ -71,7 +79,7 @@ export default function IndexPage() {
           </CardHeader>
           <CardBody className="flex flex-row items-center">
             <img
-              className="flex-1 object-contain h-full w-1/2 p-md rounded-full"
+              className="flex-1 object-contain h-full w-1/2 p-md rounded-full to-invert"
               alt="Thermomitor"
               src="https://cdn.pixabay.com/photo/2016/05/17/17/56/bip-1398748_1280.png"></img>
             <h1 className="font-black text-5xl mr-xl">-X℃</h1>
@@ -83,7 +91,7 @@ export default function IndexPage() {
           </CardHeader>
           <CardBody className="flex flex-row items-center">
             <img
-              className="flex-1 object-contain h-full w-1/2 p-md rounded-full"
+              className="flex-1 object-contain h-full w-1/2 p-md rounded-full to-invert"
               alt="Mountain"
               src="https://cdn.pixabay.com/photo/2021/11/10/07/29/mountain-6783202_1280.png"></img>
             <h1 className="font-black mr-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis libero officiis quibusdam sunt autem voluptatum ratione doloremque fugit molestiae eligendi dolores tempora labore velit illum, aut sit similique sint asperiores.</h1>
@@ -95,7 +103,7 @@ export default function IndexPage() {
           </CardHeader>
           <CardBody className="flex flex-row items-center">
             <img
-              className="flex-1 object-contain h-full w-1/2 rounded-full"
+              className="flex-1 object-contain h-full w-1/2 rounded-full to-invert"
               alt="Cloud"
               id="about"
               src="https://cdn.pixabay.com/photo/2020/09/17/22/53/cloud-5580520_1280.png"></img>
