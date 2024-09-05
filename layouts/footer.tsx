@@ -43,7 +43,7 @@ export const Footer = () => {
                             <div className="flex flex-col md:flex-row shadow-md items-center">
                                 <div className="flex-1">
                                     <Image
-                                        src=""
+                                        src="https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/Maunga_Club_white.png?raw=true"
                                         alt="Logo"
                                         width={300}
                                         height={100}

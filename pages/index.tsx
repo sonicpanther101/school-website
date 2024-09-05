@@ -52,9 +52,9 @@ export default function IndexPage() {
 
       <div className="w-full h-screen overflow-hidden" ref={emblaRef}>
         <div className="flex">
-          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
-          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
-          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}></div>
+          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/maunga_club_cabin.jpg?raw=true')` }}></div>
+          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_1.jpg?raw=true')` }}></div>
+          <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_light.jpg?raw=true')` }}></div>
         </div>
       </div>
 
@@ -72,7 +72,7 @@ export default function IndexPage() {
             <img
               className="flex-1 object-contain h-full w-1/2 p-md rounded-full"
               alt="Thermomitor"
-              src="https://imgs.search.brave.com/ESCc0nA1OEE-WekIZgR9v-z8zXmylW3D63S4xa_cH-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTk1/NzkxNDE4L3ZlY3Rv/ci90aGVybW9tZXRl/ci12ZWN0b3ItZmxh/dC1kZXNpZ24uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVRL/T2JETnRKYlhjbmxD/UWEyMnNDMXlvNEpl/V0xNNDByRlRoLTNh/aHpEY2M9"></img>
+              src="https://cdn.pixabay.com/photo/2016/05/17/17/56/bip-1398748_1280.png"></img>
             <h1 className="font-black text-5xl mr-xl">-X℃</h1>
           </CardBody>
         </Card>
@@ -84,7 +84,7 @@ export default function IndexPage() {
             <img
               className="flex-1 object-contain h-full w-1/2 p-md rounded-full"
               alt="Mountain"
-              src="https://www.shareicon.net/download/2016/01/01/696398_top.svg"></img>
+              src="https://cdn.pixabay.com/photo/2021/11/10/07/29/mountain-6783202_1280.png"></img>
             <h1 className="font-black mr-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis libero officiis quibusdam sunt autem voluptatum ratione doloremque fugit molestiae eligendi dolores tempora labore velit illum, aut sit similique sint asperiores.</h1>
           </CardBody>
         </Card>
@@ -95,9 +95,9 @@ export default function IndexPage() {
           <CardBody className="flex flex-row items-center">
             <img
               className="flex-1 object-contain h-full w-1/2 rounded-full"
-              alt="Thermomitor"
+              alt="Cloud"
               id="about"
-              src="https://images.vexels.com/media/users/3/154381/isolated/preview/95b254d1474b9a7c25e60536f82398a1-cloudy-weather-stroke-icon.png"></img>
+              src="https://cdn.pixabay.com/photo/2020/09/17/22/53/cloud-5580520_1280.png"></img>
             <h1 className="font-black mr-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo expedita tenetur aspernatur voluptatem, quos vitae ipsum, hic illum neque quod facilis recusandae quas laboriosam aliquid possimus, deserunt dicta accusantium.</h1>
           </CardBody>
         </Card>
@@ -110,11 +110,13 @@ export default function IndexPage() {
         <p className="m-lg md:m-xxl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad laudantium voluptate incidunt, laboriosam explicabo, aspernatur sed saepe vero sapiente at omnis eum tempora dicta repellat corrupti, ab rerum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque molestiae laborum animi dicta adipisci dolores aut laudantium recusandae, labore quis, possimus quae sapiente. Voluptate debitis quae aperiam, at asperiores consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur nobis dolorum consequuntur quibusdam, voluptatem ipsum saepe vero quae ex aperiam enim distinctio repellendus temporibus aliquid quas minima laborum at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur tempore optio, obcaecati, dolore ipsum consectetur aliquid vitae repudiandae voluptate animi itaque, officiis quos. Distinctio, fuga dolorem. Voluptas est esse cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione ducimus ea sit nobis, dicta officia. Consequuntur atque amet iusto recusandae animi! Vel, accusamus ad odit in fugit eligendi dolor.</p>
       </div>
 
-      { /* Reviews */ }
+      { /* Reviews */}
+      
+      <h1 className="m-lg md:m-xxl font-bold text-3xl">Reviews</h1>
       <div className="flex flex-col md:flex-row m-lg md:m-xxl gap-xl">
         <Card className="flex-1 shadow-md bg-secondary">
           <CardHeader className="justify-between flex gap-5 m-lg mb-sm">
-            <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" className="flex-1 basis-[20%]" />
+            <Avatar isBordered radius="full" size="md" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" className="flex-1 basis-[20%]" />
             <div className="justify-center flex-1 basis-[80%]">
               <h4 className="text-small font-semibold leading-none ml-lg">First name Last name</h4>
             </div>
@@ -128,7 +130,7 @@ export default function IndexPage() {
 
         <Card className="flex-1 shadow-md bg-secondary">
           <CardHeader className="justify-between flex gap-5 m-lg mb-sm">
-            <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" className="flex-1 basis-[20%]" />
+            <Avatar isBordered radius="full" size="md" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" className="flex-1 basis-[20%]" />
             <div className="justify-center flex-1 basis-[80%]">
               <h4 className="text-small font-semibold leading-none ml-lg">First name Last name</h4>
             </div>
@@ -142,7 +144,7 @@ export default function IndexPage() {
 
         <Card className="flex-1 shadow-md bg-secondary">
           <CardHeader className="justify-between flex gap-5 m-lg mb-sm">
-            <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" className="flex-1 basis-[20%]" />
+            <Avatar isBordered radius="full" size="md" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" className="flex-1 basis-[20%]" />
             <div className="justify-center flex-1 basis-[80%]">
               <h4 className="text-small font-semibold leading-none ml-lg">First name Last name</h4>
             </div>
@@ -159,14 +161,32 @@ export default function IndexPage() {
       <div className="w-full h-[80vh] mb-[15rem] overflow-hidden md:overflow-visible cursor-default select-none" ref={emblaRef2}>
         <div className="flex">
           <div
-            className="flex flex-col flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
-            style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}
+            className="flex flex-col flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-bottom"
+            style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/cabin_exterior.jpg?raw=true')` }}
           >
             <div className="flex-1"></div>
             <div className="flex-1 xl:hidden"></div>
             <Card className="flex-1 m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
               <CardHeader className="font-bold text-3xl">
-                XXX chalet
+                Kakapo Chalet
+              </CardHeader>
+              <CardBody className="mb-lg md:mb-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
+              </CardBody>
+              <CardFooter className="justify-end">
+                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+              </CardFooter>
+            </Card>
+          </div>
+          <div
+            className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-right-bottom"
+            style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/kereru/cabin_exterior.jpg?raw=true')` }}
+          >
+            <div className="flex-1"></div>
+            <div className="flex-1 xl:hidden"></div>
+            <Card className="flex-1 flex-grow m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
+              <CardHeader className="font-bold text-3xl">
+                Kereru Chalet
               </CardHeader>
               <CardBody className="mb-lg md:mb-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
@@ -178,31 +198,13 @@ export default function IndexPage() {
           </div>
           <div
             className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
-            style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}
+            style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/chalet_exterior.jpg?raw=true')` }}
           >
             <div className="flex-1"></div>
             <div className="flex-1 xl:hidden"></div>
             <Card className="flex-1 flex-grow m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
               <CardHeader className="font-bold text-3xl">
-                XXX chalet
-              </CardHeader>
-              <CardBody className="mb-lg md:mb-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
-              </CardBody>
-              <CardFooter className="justify-end">
-                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
-              </CardFooter>
-            </Card>
-          </div>
-          <div
-            className="flex flex-col flex-grow flex-[0_0_100%] min-w-0 h-[80vh] bg-cover bg-center"
-            style={{ backgroundImage: `url('https://imgs.search.brave.com/tDOmKAC5oVW5aY3l7Vovuom5EARlVQ94U_8d1s09gZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjM4NjcxL3Bob3Rv/L3NraWVyLXNraWlu/Zy1vbi1zbm93eS1z/bG9wZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RnpNXzJG/dGRsNUItQXl5Qkx2/OXRVM1lDaFhPVDZq/dzRnYl9Pb2JwbUhB/dz0')` }}
-          >
-            <div className="flex-1"></div>
-            <div className="flex-1 xl:hidden"></div>
-            <Card className="flex-1 flex-grow m-sm p-sm md:m-lg md:p-lg md:mb-[-5rem]">
-              <CardHeader className="font-bold text-3xl">
-                XXX chalet
+                Pukeko Chalet
               </CardHeader>
               <CardBody className="mb-lg md:mb-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!

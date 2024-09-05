@@ -85,7 +85,7 @@ export const Head = () => {
       <NavbarBrand>
         <Link href="/">
           <Image
-            src=""
+            src="https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/Maunga_Club_white.png?raw=true"
             alt="Logo"
             width={200}
             height={50}

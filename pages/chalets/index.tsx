@@ -44,15 +44,35 @@ function signedInCheck(data: string) {
     });
 }
 
-let XXXXX_date = {
+let pukeko_date = {
     start: parseDate("2024-05-10"),
     end: parseDate("2024-05-20")
 };
 
-let XXXXX_adult_num: number = 0;
-let XXXXX_child_num: number = 0;
+let pukeko_adult_num: number = 0;
+let pukeko_child_num: number = 0;
 
-const XXXXX_capacities: number[] = [30,10]
+const pukeko_capacities: number[] = [6, 15]
+
+let kereru_date = {
+    start: parseDate("2024-05-10"),
+    end: parseDate("2024-05-20")
+};
+
+let kereru_adult_num: number = 0;
+let kereru_child_num: number = 0;
+
+const kereru_capacities: number[] = [2, 4]
+
+let kakapo_date = {
+    start: parseDate("2024-05-10"),
+    end: parseDate("2024-05-20")
+};
+
+let kakapo_adult_num: number = 0;
+let kakapo_child_num: number = 0;
+
+const kakapo_capacities: number[] = [10, 30]
 
 function isNumericString(str: string): boolean {
     return /^\d+$/.test(str);
@@ -92,13 +112,23 @@ function handleBooking(chalet: string) {
     let child_num;
     let capacities;
 
-    if (chalet == "XXXXX") {
-        date_range = XXXXX_date;
-        adult_num = XXXXX_adult_num;
-        child_num = XXXXX_child_num;
-        capacities = XXXXX_capacities;
+    if (chalet == "pukeko") {
+        date_range = pukeko_date;
+        adult_num = pukeko_adult_num;
+        child_num = pukeko_child_num;
+        capacities = pukeko_capacities;
+    } else if (chalet == "kereru") {
+        date_range = kereru_date;
+        adult_num = kereru_adult_num;
+        child_num = kereru_child_num;
+        capacities = kereru_capacities;
+    } else if (chalet == "kakapo") {
+        date_range = kakapo_date;
+        adult_num = kakapo_adult_num;
+        child_num = kakapo_child_num;
+        capacities = kakapo_capacities;
     } else {
-        return
+        return;
     }
 
     if (isInvalidDateRange(date_range) || isInvalidCapacity(adult_num, child_num, capacities)) {
@@ -125,8 +155,14 @@ function bookingSuccess(date_range: any, adult_num: number, child_num: number, c
 
 export default function IndexPage() { 
 
-    const [isXXXXXInvalidCapacity, setIsXXXXXInvalidCapacity] = useState(false);
-    const [isXXXXXInvalidDateRange, setIsXXXXXInvalidDateRange] = useState(false);
+    const [ispukekoInvalidCapacity, setIspukekoInvalidCapacity] = useState(false);
+    const [ispukekoInvalidDateRange, setIspukekoInvalidDateRange] = useState(false);
+
+    const [iskereruInvalidCapacity, setIskereruInvalidCapacity] = useState(false);
+    const [iskereruInvalidDateRange, setIskereruInvalidDateRange] = useState(false);
+
+    const [iskakapoInvalidCapacity, setIskakapoInvalidCapacity] = useState(false);
+    const [iskakapoInvalidDateRange, setIskakapoInvalidDateRange] = useState(false);
 
     const [signedIn, setSignedIn] = useState(null);
 
@@ -164,21 +200,37 @@ export default function IndexPage() {
             </div>
             <div className="h-[25vh]"></div>
 
+            <Card className="w-2/3 mx-auto">
+                    <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Details</h1>
+                    <p className="m-xl">• Only Club members can access the chalets.<br />
+                        • All chalet bookings must be from Friday to Sunday.<br />
+                        • Chalets offer shared accommodation for between 6 and 40 people per chalet.<br />
+                        • All three chalets are on the mountain, so you can ski to and from the chalets.<br />
+                        • The mountain gives 550 hectares of skiing/snowboarding area, and the longest
+                        ski/snowboard season in New Zealand.<br />
+                        • The table below summarises key features of the three chalets, including the
+                        maximum number of adults and children that each chalet can accommodate.</p>
+            </Card>
+
             <div>
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">XXXXX Chalet</h1>
+                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kakapo Chalet</h1>
                 <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef}>
                     <div className="flex">
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/bunk_room.jpg?raw=true"
                             alt="chalet" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/cabin_exterior.jpg?raw=true"
                             alt="chalet" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/cabin_view.jpg?raw=true"
+                                alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kakapo/hallway.jpg?raw=true"
                             alt="chalet" />
                     </div>
                 </div>
@@ -187,7 +239,11 @@ export default function IndexPage() {
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
-                        <CardBody className="min-h-[20vh]">
+                            <CardBody className="min-h-[20vh]">
+                                • Largest of the chalets<br />
+                                • Large kitchen, dining and
+                                living area<br />
+                                • Great amenities<br />
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
                         </CardBody>
                     </div>
@@ -195,13 +251,13 @@ export default function IndexPage() {
                         <DateRangePicker
                             label="Stay duration"
                             onChange={(value: any) => {
-                                XXXXX_date = value;
-                                setIsXXXXXInvalidDateRange(isInvalidDateRange(XXXXX_date))
+                                kakapo_date = value;
+                                setIskakapoInvalidDateRange(isInvalidDateRange(kakapo_date))
                             }}
                             isRequired
                             variant="underlined"
                             description="Pick a range of dates between Friday and Sunday"
-                            isInvalid={isXXXXXInvalidDateRange}
+                            isInvalid={iskakapoInvalidDateRange}
                             errorMessage="Please enter dates between Friday and Sunday"
                             className="signed-in hidden max-w-xs bg-secondary p-sm rounded-xl"
                         />
@@ -209,63 +265,67 @@ export default function IndexPage() {
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Adults"
-                                description={`Max ${XXXXX_capacities[0]}`}
+                                description={`Max ${kakapo_capacities[0]}`}
                                 isRequired
                                 size="lg"
                                 variant="underlined"
                                 type='number'
-                                isInvalid={isXXXXXInvalidCapacity}
+                                isInvalid={iskakapoInvalidCapacity}
                                 errorMessage="Please Enter Valid Capacity" 
                                 onValueChange={(value) => {
                                     if (value != null && isNumericString(value)) {
                                         if (parseInt(value) >= 0) {
-                                            XXXXX_adult_num = parseInt(value);
+                                            kakapo_adult_num = parseInt(value);
                                         }
                                     }
-                                    setIsXXXXXInvalidCapacity(isInvalidCapacity(XXXXX_adult_num, XXXXX_child_num, XXXXX_capacities))
+                                    setIskakapoInvalidCapacity(isInvalidCapacity(kakapo_adult_num, kakapo_child_num, kakapo_capacities))
                                 }}
                             />
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Kids"
-                                description={`Max ${XXXXX_capacities[1]}`}
+                                description={`Max ${kakapo_capacities[1]}`}
                                 isRequired
                                 size="lg"
                                 variant="underlined"
                                 type='number'
-                                isInvalid={isXXXXXInvalidCapacity}
+                                isInvalid={iskakapoInvalidCapacity}
                                 errorMessage="Please Enter Valid Capacity"
                                 onValueChange={(value) => {
                                     if (value != null && isNumericString(value)) {
                                         if (parseInt(value) >= 0) {
-                                            XXXXX_child_num = parseInt(value);
+                                            kakapo_child_num = parseInt(value);
                                         }
                                     }
-                                    setIsXXXXXInvalidCapacity(isInvalidCapacity(XXXXX_adult_num, XXXXX_child_num, XXXXX_capacities))
+                                    setIskakapoInvalidCapacity(isInvalidCapacity(kakapo_adult_num, kakapo_child_num, kakapo_capacities))
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("XXXXX")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("kakapo")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
                         <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
             </div>
 
             <div>
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">XXXXX Chalet</h1>
+                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kereru Chalet</h1>
                 <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef1}>
                     <div className="flex">
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/adult_bedroom.jpg?raw=true"
                             alt="chalet" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/cabin_exterior.jpg?raw=true"
                             alt="chalet" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/kids_bedroom.jpg?raw=true"
+                                alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/kereru/kitchen.jpg?raw=true"
                             alt="chalet" />
                     </div>
                 </div>
@@ -274,7 +334,12 @@ export default function IndexPage() {
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
-                        <CardBody className="min-h-[20vh]">
+                            <CardBody className="min-h-[20vh]">
+                                • Great option for a family<br />
+                                • 2 bedrooms<br />
+                                • Perfect for families with 2-4
+                                children<br />
+                                • Separate living area<br />
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
                         </CardBody>
                     </div>
@@ -282,13 +347,13 @@ export default function IndexPage() {
                         <DateRangePicker
                             label="Stay duration"
                             onChange={(value: any) => {
-                                XXXXX_date = value;
-                                setIsXXXXXInvalidDateRange(isInvalidDateRange(XXXXX_date))
+                                kereru_date = value;
+                                setIskereruInvalidDateRange(isInvalidDateRange(kereru_date))
                             }}
                             isRequired
                             variant="underlined"
                             description="Pick a range of dates between Friday and Sunday"
-                            isInvalid={isXXXXXInvalidDateRange}
+                            isInvalid={iskereruInvalidDateRange}
                             errorMessage="Please enter dates between Friday and Sunday"
                             className="signed-in hidden max-w-xs bg-secondary p-sm rounded-xl"
                         />
@@ -296,63 +361,67 @@ export default function IndexPage() {
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Adults"
-                                description={`Max ${XXXXX_capacities[0]}`}
+                                description={`Max ${kereru_capacities[0]}`}
                                 isRequired
                                 size="lg"
                                 variant="underlined"
                                 type='number'
-                                isInvalid={isXXXXXInvalidCapacity}
+                                isInvalid={iskereruInvalidCapacity}
                                 errorMessage="Please Enter Valid Capacity"
                                 onValueChange={(value) => {
                                     if (value != null && isNumericString(value)) {
                                         if (parseInt(value) >= 0) {
-                                            XXXXX_adult_num = parseInt(value);
+                                            kereru_adult_num = parseInt(value);
                                         }
                                     }
-                                    setIsXXXXXInvalidCapacity(isInvalidCapacity(XXXXX_adult_num, XXXXX_child_num, XXXXX_capacities))
+                                    setIskereruInvalidCapacity(isInvalidCapacity(kereru_adult_num, kereru_child_num, kereru_capacities))
                                 }}
                             />
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Kids"
-                                description={`Max ${XXXXX_capacities[1]}`}
+                                description={`Max ${kereru_capacities[1]}`}
                                 isRequired
                                 size="lg"
                                 variant="underlined"
                                 type='number'
-                                isInvalid={isXXXXXInvalidCapacity}
+                                isInvalid={iskereruInvalidCapacity}
                                 errorMessage="Please Enter Valid Capacity"
                                 onValueChange={(value) => {
                                     if (value != null && isNumericString(value)) {
                                         if (parseInt(value) >= 0) {
-                                            XXXXX_child_num = parseInt(value);
+                                            kereru_child_num = parseInt(value);
                                         }
                                     }
-                                    setIsXXXXXInvalidCapacity(isInvalidCapacity(XXXXX_adult_num, XXXXX_child_num, XXXXX_capacities))
+                                    setIskereruInvalidCapacity(isInvalidCapacity(kereru_adult_num, kereru_child_num, kereru_capacities))
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("XXXXX")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("kereru")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
                         <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
             </div>
 
             <div className="mb-x3l">
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">XXXXX Chalet</h1>
+                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Pukeko Chalet</h1>
                 <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef2}>
                     <div className="flex">
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/adult_bedroom.jpg?raw=true"
                             alt="chalet" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/bathroom.jpg?raw=true"
                             alt="chalet" />
                         <img
                             className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
-                            src="https://media.gettyimages.com/id/185010957/photo/mountain-log-chalet.jpg?s=612x612&w=0&k=20&c=MV_qneVamVI4f5SkI9Za6_yGICPMKLfoguPih4vqC_o="
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/chalet_exterior.jpg?raw=true"
+                                alt="chalet" />
+                        <img
+                            className="flex-1 h-[80vh] object-cover md:rounded-2xl m-xl shadow-2xl"
+                                src="https://github.com/sonicpanther101/school-website/blob/main/images/pukeko/chalet_view.jpg?raw=true"
                             alt="chalet" />
                     </div>
                 </div>
@@ -361,7 +430,13 @@ export default function IndexPage() {
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
-                        <CardBody className="min-h-[20vh]">
+                            <CardBody className="min-h-[20vh]">
+                                • Great for large
+
+                                groups/families wanting a
+                                chalet to themselves<br />
+                                • Limits on adult/child number
+                                ensure comfortable stay<br />
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
                         </CardBody>
                     </div>
@@ -369,13 +444,13 @@ export default function IndexPage() {
                         <DateRangePicker
                             label="Stay duration"
                             onChange={(value: any) => {
-                                XXXXX_date = value;
-                                setIsXXXXXInvalidDateRange(isInvalidDateRange(XXXXX_date))
+                                pukeko_date = value;
+                                setIspukekoInvalidDateRange(isInvalidDateRange(pukeko_date))
                             }}
                             isRequired
                             variant="underlined"
                             description="Pick a range of dates between Friday and Sunday"
-                            isInvalid={isXXXXXInvalidDateRange}
+                            isInvalid={ispukekoInvalidDateRange}
                             errorMessage="Please enter dates between Friday and Sunday"
                             className="signed-in hidden max-w-xs bg-secondary p-sm rounded-xl"
                         />
@@ -383,43 +458,43 @@ export default function IndexPage() {
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Adults"
-                                description={`Max ${XXXXX_capacities[0]}`}
+                                description={`Max ${pukeko_capacities[0]}`}
                                 isRequired
                                 size="lg"
                                 variant="underlined"
                                 type='number'
-                                isInvalid={isXXXXXInvalidCapacity}
+                                isInvalid={ispukekoInvalidCapacity}
                                 errorMessage="Please Enter Valid Capacity"
                                 onValueChange={(value) => {
                                     if (value != null && isNumericString(value)) {
                                         if (parseInt(value) >= 0) {
-                                            XXXXX_adult_num = parseInt(value);
+                                            pukeko_adult_num = parseInt(value);
                                         }
                                     }
-                                    setIsXXXXXInvalidCapacity(isInvalidCapacity(XXXXX_adult_num, XXXXX_child_num, XXXXX_capacities))
+                                    setIspukekoInvalidCapacity(isInvalidCapacity(pukeko_adult_num, pukeko_child_num, pukeko_capacities))
                                 }}
                             />
                             <Input
                                 className="bg-secondary p-sm rounded-xl"
                                 label="Kids"
-                                description={`Max ${XXXXX_capacities[1]}`}
+                                description={`Max ${pukeko_capacities[1]}`}
                                 isRequired
                                 size="lg"
                                 variant="underlined"
                                 type='number'
-                                isInvalid={isXXXXXInvalidCapacity}
+                                isInvalid={ispukekoInvalidCapacity}
                                 errorMessage="Please Enter Valid Capacity"
                                 onValueChange={(value) => {
                                     if (value != null && isNumericString(value)) {
                                         if (parseInt(value) >= 0) {
-                                            XXXXX_child_num = parseInt(value);
+                                            pukeko_child_num = parseInt(value);
                                         }
                                     }
-                                    setIsXXXXXInvalidCapacity(isInvalidCapacity(XXXXX_adult_num, XXXXX_child_num, XXXXX_capacities))
+                                    setIspukekoInvalidCapacity(isInvalidCapacity(pukeko_adult_num, pukeko_child_num, pukeko_capacities))
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("XXXXX")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("pukeko")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
                         <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
