@@ -6,9 +6,6 @@ import { Input } from "@nextui-org/react";
 
 import { useState, useEffect } from "react";
 
-import { EyeFilledIcon } from "@/layouts/EyeFilledIcon";
-import { EyeSlashFilledIcon } from "@/layouts/EyeSlashFilledIcon";
-
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
