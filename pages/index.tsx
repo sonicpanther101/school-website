@@ -8,6 +8,7 @@ import { Divider } from "@nextui-org/divider";
 import { Avatar } from "@nextui-org/avatar";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
 
 import AutoScroll from "embla-carousel-auto-scroll";
 import Autoplay from "embla-carousel-autoplay";
@@ -174,7 +175,7 @@ export default function IndexPage() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
               </CardBody>
               <CardFooter className="justify-end">
-                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+                <Button as={Link} href={'/chalets#kakapo'} className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
               </CardFooter>
             </Card>
           </div>
@@ -192,7 +193,7 @@ export default function IndexPage() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
               </CardBody>
               <CardFooter className="justify-end">
-                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+                <Button as={Link} href={'/chalets#kereru'}  className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
               </CardFooter>
             </Card>
           </div>
@@ -210,7 +211,7 @@ export default function IndexPage() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum voluptates dolores consequuntur optio quisquam voluptate at magni corrupti doloribus distinctio sunt dolorum aliquid iure nobis explicabo, repellendus unde! Delectus!
               </CardBody>
               <CardFooter className="justify-end">
-                <Button className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+                <Button as={Link} href={'/chalets#pukeko'} className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
               </CardFooter>
             </Card>
           </div>

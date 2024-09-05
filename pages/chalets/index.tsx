@@ -213,7 +213,7 @@ export default function IndexPage() {
             </Card>
 
             <div>
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kakapo Chalet</h1>
+                <h1 id="kakapo" className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kakapo Chalet</h1>
                 <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef}>
                     <div className="flex">
                         <img
@@ -308,7 +308,7 @@ export default function IndexPage() {
             </div>
 
             <div>
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kereru Chalet</h1>
+                <h1 id="kereru" className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kereru Chalet</h1>
                 <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef1}>
                     <div className="flex">
                         <img
@@ -404,7 +404,7 @@ export default function IndexPage() {
             </div>
 
             <div className="mb-x3l">
-                <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Pukeko Chalet</h1>
+                <h1 id="pukeko" className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Pukeko Chalet</h1>
                 <div className="w-full md:w-[120%] h-[120vh] overflow-hidden md:ml-[-10%]" ref={emblaRef2}>
                     <div className="flex">
                         <img
