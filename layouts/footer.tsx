@@ -67,7 +67,7 @@ export const Footer = () => {
                     <h3 className="text-xl font-medium">Contact Us</h3>
                     <p>Phone: 0XX XXX XXX</p>
                     <p>Email: maungaclub@maungaclub.maungaclub</p>
-                    <Link href="https://github.com/sonicpanther101" className="flex items-center space-x-3 transition hover:text-primary mt-sm">
+                    <Link href="https://github.com/sonicpanther101/school-website" className="flex items-center space-x-3 transition hover:text-primary mt-sm">
                         <div className="flex-1"></div>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
