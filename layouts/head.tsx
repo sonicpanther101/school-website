@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 import { ThemeSwitch } from "@/components/theme-switch";
 
 import Link from "next/link";
+import Image from 'next/image';
 import { Button, ButtonGroup } from "@nextui-org/button";
 
 function signedInCheck(data: string) {
@@ -83,16 +84,13 @@ export const Head = () => {
       className={`fixed transition-all duration-250 ${isScrolled ? "shadow-md bg-secondary" : "bg-transparent"}`}>
       <NavbarBrand>
         <Link href="/">
-          <img
-            src="https://imgs.search.brave.com/Cy3p8CFMTqPdyeaU3Rd7kWQnfWafux7E-EjZCxP8a3E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL21vdW50YWlu/LXBlYWstcG5nLWhk/LW1vdW50YWluLXBu/Zy0xMDUwLnBuZw"
+          <Image
+            src=""
             alt="Logo"
-            width={32}
-            height={32}
+            width={200}
+            height={50}
             className="cursor-pointer rounded-full ml-xl"
           />
-        </Link>
-        <Link href="/" className="font-bold text-inherit pl-sm cursor-pointer">
-          Maunga Club
         </Link>
       </NavbarBrand>
 
@@ -119,7 +117,7 @@ export const Head = () => {
             Sign Up
           </Button>
         </NavbarItem>
-        <NavbarItem className="signed-in">
+        <NavbarItem className="hidden signed-in">
           <h1 color="primary" className="mr-xl p-sm rounded-full">
             Hi, {name}!
           </h1>
@@ -155,6 +153,9 @@ export const Head = () => {
           <Link href="/register" className="p-md">
             Register
           </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem className="flex-1">
+          <ThemeSwitch className="p-md" />
         </NavbarMenuItem>
         <NavbarMenuItem className="flex-1 basis-1/2"></NavbarMenuItem>
       </NavbarMenu>
