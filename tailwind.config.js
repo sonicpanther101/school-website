@@ -20,6 +20,9 @@ module.exports = {
 			x4l: '10rem',
 			percent1: '5%',
 		},
+		fontFamily: {
+			'jetBrains': ['"JetBrains Mono"', 'monospace'],
+		},
 		extend: {
 			borderRadius: {
 				lg: 'var(--radius)',
