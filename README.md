@@ -2,9 +2,9 @@
 
 To visit, go to: [maunga-club.vercel.app](https://maunga-club.vercel.app)
 
-To request features, suggestions or bugs, please use the [GitHub issues](https://github.com/sonicpanther101/nextjs-website/issues)
+To request features, suggestions or report bugs, please use the [GitHub issues](https://github.com/sonicpanther101/nextjs-website/issues)
 
-To run the site locally in development mode,:
+To run the site locally in development mode:
 1. [Download](https://github.com/sonicpanther101/school-website/archive/refs/heads/main.zip) or clone the repository: `git clone https://github.com/sonicpanther101/school-website.git`
 2. Navigate to the `school-website` directory in the terminal
 3. Run `npm install`
@@ -80,18 +80,6 @@ I have demonstrated use of conventions appropriate for the purpose of the websit
 - Evidence of getting feedback from end-users and using this feedback to improve the website design <br>[Github - Issues](https://github.com/sonicpanther101/school-website/issues?q=is%3Aissue+is%3Aclosed)
 - Using the popular [Catppuccin theme](https://github.com/catppuccin/catppuccin) to style the website<br>![Using the Catppuccin theme to style the website](public/image-6.png)
 
-Design elements include:
-Colour
-Line
-Scale
-Hierarchy
-Contrast
-Composition
-Typography
-Whites space
-Repetition
-Images
-
 ### Evidence of using information I gathered from TESTING to improve the quality of the website
 
 When testing the website with a screen reader, I found that many images did not have alt text. I then added explanatory alt text to all images.
@@ -108,8 +96,11 @@ To:
 ![good contrast](public/image-11.png)
 
 When testing responsiveness, I found that the logo was cut off by the other side of the header and the details div had too much margin when viewed on a mobile device. I then reduced the margin of the details div and shrunk the logo a bit for mobile view only. Before:
+
 ![bad responsiveness](public/image-13.png)
+
 After:
+
 ![good responsiveness](public/image-14.png)
 
 When testing using the given website ([https://validator.w3.org/](https://validator.w3.org/)), I found that it warns for "Trailing slash on void elements". In other words, it is bad practice to have an element like \<br/\>. So I then removed all trailing slashes. After testing this, I found that the website didn't load. I then added a trailing slash back to all void elements. This is a classic example of the phrase "If it ain't broke, don't fix it". Because it did not give me a detailed error, the only evidence is:
@@ -120,7 +111,7 @@ When testing using the given website ([https://validator.w3.org/](https://valida
 
 I have addressed the implication of aesthetics by applying a colour scheme specifically designed to be plain, simple and pleasing to the eye.
 <br>
-I have addressed the implication of user-friendliness by making sure that the website is easy to use and intuitive to use for both new  and returning users through the use of flexboxes to well space elements and the use of common convention of websites, having intuitive navigation for everyone who has used a website before.
+I have addressed the implication of user-friendliness by making sure that the website is easy to use and intuitive to use for both new and returning users through the use of flexboxes to well space elements and the use of common convention of websites, having intuitive navigation for everyone who has used a website before.
 <br>
 I have addressed the implication of consistency and convenience by making the website follow the common layout of websites, allowing for users to easily and quickly find what they need.
 <br>
@@ -135,16 +126,23 @@ I have addressed the implication of sustainability and future-proof by using an 
 ### Demonstration of using efficient tools and techniques when developing my website
 
 I have used the default Next.js "pages" file structure. This means that all pages are created in a folder called "pages" and each page is created in a folder with the name of the page, eg. "pages/index.tsx" for the homepage and "pages/register/index.tsx" for the register page. This is key for having a logical and industry standard file structure.
+
 ![file structure image](public/image-16.png)
 
 I have added meaningful comments to my code by commenting to title the sections of my homepage.
+
 ![meaningful comments](public/image-17.png)
+
 And also by commenting on features that are not yet implemented.
+
 ![emailing details comment](public/image-19.png)
 
 I have used [https://validator.w3.org/](https://validator.w3.org/) to validate my website. When I ran it first, I found that it had a few errors.
+
 ![w3c validation](public/image-18.png)
-I went ahead and fixed these errors however I cannot fix some due to Next.js being ahead of the validator in terms of convention.
+
+I went ahead and fixed these errors however I cannot fix some because I am using Next.js, which means the code I write is not directly the html that ends up on the website. This means I don't have control over the compilation to get rid of these errors.
+
 ![change 1](public/image-20.png)
 ![change 2](public/image-21.png)
 
@@ -155,19 +153,54 @@ I have optimised my website by optimising the load method for images and other m
 I have logged my continual improvements to my website throughout the design, development and testing process by using Github to save my work, showing each change made to the website at each step. You can find my work here: [Github - Commits](https://github.com/sonicpanther101/school-website/commits). By clicking on the commit, you can see the files that were changed.
 
 When I was creating the homepage, I first made a *very* rough plan of the website in Aseprite.
+
 ![homepage rough layout](public/home.png)
 
-Do this to ensure the website is of a high quality.
+I then went ahead and made the homepage to a decent quality (sorry for the rip in the screenshot).
 
-Example:
-Start with creating the homepage
-Get feedback from end-users on look and functionality
-Apply feedback
-Ask for more feedback
-Create more pages
-Continue ..
+![pre feedback homepage](public/image-22.png)
 
-Keep evidence showing how you tested and made improvements. 
+After that I asked for feedback from Oli. He said that I should use higher quality images and remove the placeholder images, so I got the images from the google classroom and a few from [Pixabay](https://pixabay.com/) to avoid any legal concerns. You can find everything I changed from Oli's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/a94ad3619716569ee1c1d14ee447b56f22c7bbf4).
+
+![after Oli's feedback](public/image-23.png)
+
+After that, I asked for feedback from my dad. He said that the pixabay images didn't have enough contrast when in dark mode. I hadn't noticed this because my monitor with which I was making the website had a very high contrast, so this was a good thing he noticed by using his phone and laptop. I had to search the tailwind CSS documentation to find how to invert the colours of an image, I found [this](https://tailwindcss.com/docs/invert). I then also needed to add some TypeScript to toggle the inverted colours.
+
+![changes I made to the typescript](public/image-24.png)
+
+You can find everything I changed from my dad's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/0bf1e906e7eadfe108428dd75aa6bc6cfb41c6bb) and you can find the log of this issue here: [Github - Issues](https://github.com/sonicpanther101/school-website/issues/1).
+
+![after my dad's feedback](public/image-25.png)
+
+There were a lot more changes that I made to the website after feedback, but these are only the ones from the homepage that I have logged.
+
+For the registration page, I got a rough plan of the page from the [Aceternity registration demo](https://ui.aceternity.com/components/signup-form).
+
+![rough start on registration page](public/image-26.png)
+
+I then used a mix of [Nextui inputs](https://nextui.org/docs/components/input) and [MUI file uploads](https://mui.com/material-ui/react-button/#file-upload) to create the pre-feedback registration page. 
+
+![pre feedback registration page](public/image-27.png)
+
+After this I went and got some feedback from my dad, who was using his phone that has a different resolution to the ones I was testing earlier, and he said that the submit sign up button was hidden on his phone.
+
+![sign up button not there](public/image-28.png)
+
+I then made the registration card have a larger height in mobile view by changing `h-[85vh] lg:h-[70vh]` to `h-[115vh] lg:h-[85vh]`. `h-` documentation: [Tailwind CSS - Height](https://tailwindcss.com/docs/height) and `ld:` documentation: [Tailwind CSS - Responsiveness](https://tailwindcss.com/docs/responsive-design). This change is a great example of why tailwind CSS is so powerful, because instead of:
+- Finding the element that you want to change
+- Finding and remember its class
+- Going to the CSS file
+- Finding the class that you want to change
+- Finally change it
+- Worry about other elements with the same class
+
+You can just:
+- Find the element that you want to change
+- Change the class
+
+![sign up button there](public/image-29.png)
+
+You can find everything I changed from my dad's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/0bf1e906e7eadfe108428dd75aa6bc6cfb41c6bb) and you can find the log of this issue here: [Github - Issues](https://github.com/sonicpanther101/school-website/issues/2).
 
 ## Planning
 
