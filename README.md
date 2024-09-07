@@ -202,6 +202,10 @@ You can just:
 
 You can find everything I changed from my dad's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/0bf1e906e7eadfe108428dd75aa6bc6cfb41c6bb) and you can find the log of this issue here: [Github - Issues](https://github.com/sonicpanther101/school-website/issues/2).
 
+## Challenges
+
+Having 3 weeks to make a website sounds like a lot of time. However, with the preliminary  exams in the middle of that time slot, I had very little time to work on the website in the first 2 weeks because I was studying hard for the exams. I worked on the header and footer of the website up until Tuesday of the final week, working at a normal pace. I realised it had to be done by Friday, and cranked up the hours, because when coding you can't code faster or slower, you just have to put more time into it. This allowed me to finish the majority of the website by Thursday, only having to stay up till 4AM twice to get there. Finally on friday, I started on the write up and found that it was only due on Sunday, which made me really mad. But this also made me proud of what I can do in such a short amount of time.
+
 ## Planning
 
 ![header and footer](public/header-footer.png)
