@@ -202,12 +202,12 @@ export default function IndexPage() {
 
             <Card className="w-11/12 md:w-2/3 mx-auto">
                     <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Details</h1>
-                    <p className="m-xl">• Only Club members can access the chalets.<br />
-                        • All chalet bookings must be from Friday to Sunday.<br />
-                        • Chalets offer shared accommodation for between 6 and 40 people per chalet.<br />
-                        • All three chalets are on the mountain, so you can ski to and from the chalets.<br />
+                    <p className="m-xl">• Only Club members can access the chalets.<br/>
+                        • All chalet bookings must be from Friday to Sunday.<br/>
+                        • Chalets offer shared accommodation for between 6 and 40 people per chalet.<br/>
+                        • All three chalets are on the mountain, so you can ski to and from the chalets.<br/>
                         • The mountain gives 550 hectares of skiing/snowboarding area, and the longest
-                        ski/snowboard season in New Zealand.<br />
+                        ski/snowboard season in New Zealand.<br/>
                         • The table below summarises key features of the three chalets, including the
                         maximum number of adults and children that each chalet can accommodate.</p>
             </Card>
@@ -240,11 +240,11 @@ export default function IndexPage() {
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
                             <CardBody className="min-h-[20vh]">
-                                • Largest of the chalets<br />
+                                • Largest of the chalets<br/>
                                 • Large kitchen, dining and
-                                living area<br />
-                                • Great amenities<br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
+                                living area<br/>
+                                • Great amenities<br/><br/>
+                            The Kākāpo is our largest chalet, offering ample space and luxurious amenities for groups of all sizes. Its spacious kitchen, dining, and living areas provide plenty of room for socializing and relaxation. The Kākāpo is ideal for families with children, offering a variety of entertainment options and comfortable sleeping arrangements. With its prime location on the mountain, the Kākāpo provides easy access to all the best skiing and snowboarding terrain.
                         </CardBody>
                     </div>
                     <CardFooter className="justify-center flex-1 flex flex-col gap-md">
@@ -335,12 +335,12 @@ export default function IndexPage() {
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
                         </CardHeader>
                             <CardBody className="min-h-[20vh]">
-                                • Great option for a family<br />
-                                • 2 bedrooms<br />
+                                • Great option for a family<br/>
+                                • 2 bedrooms<br/>
                                 • Perfect for families with 2-4
-                                children<br />
-                                • Separate living area<br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
+                                children<br/>
+                                • Separate living area<br/><br/>
+                            The Kererū is our smallest chalet, providing a cozy and intimate atmosphere for families of four. With its two bedrooms and separate living area, the Kererū offers a comfortable and convenient layout for families with young children. The chalet's location on the mountain provides easy access to the slopes and stunning views of the surrounding landscape. The Kererū is a perfect choice for families seeking a quiet and peaceful retreat in the mountains.
                         </CardBody>
                     </div>
                     <CardFooter className="justify-center flex-1 flex flex-col gap-md">
@@ -434,10 +434,10 @@ export default function IndexPage() {
                                 • Great for large
 
                                 groups/families wanting a
-                                chalet to themselves<br />
+                                chalet to themselves<br/>
                                 • Limits on adult/child number
-                                ensure comfortable stay<br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur repellendus quidem reprehenderit enim eveniet? Itaque laboriosam a amet aperiam ullam, obcaecati molestias reiciendis sequi possimus cupiditate, maiores ducimus ipsam.
+                                ensure comfortable stay<br/><br/>
+                            The Pūkeko is a perfect choice for families or groups seeking a more intimate setting. With its limited adult/child capacity, the Pūkeko ensures a comfortable and enjoyable stay for all. The chalet's cozy living area is perfect for relaxing after a day on the slopes, while the well-equipped kitchen makes it easy to prepare meals for your group. The Pūkeko's location on the mountain offers stunning views and easy access to the ski area.
                         </CardBody>
                     </div>
                     <CardFooter className="justify-center flex-1 flex flex-col gap-md">

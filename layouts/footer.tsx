@@ -53,7 +53,7 @@ export const Footer = () => {
 
                                 <div className="flex-1 basis-1/3 m-xl ml-percent1">
                                     <h3 className="text-2xl font-medium">Maunga Club</h3>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate aspernatur eum qui eveniet architecto culpa animi adipisci reiciendis accusantium, totam nemo fugiat at voluptas soluta dignissimos magni commodi pariatur.</p>
+                                    <p>Discover the beauty of New Zealand's mountains. Our chalets offer the perfect blend of comfort and convenience, making your mountain getaway unforgettable. Whether you're seeking adventure, relaxation, or a family-friendly retreat, we have the ideal chalet to suit your needs.</p>
                                     <br />
                                     <Link href="/#about" className="p-md">
                                         About Us
