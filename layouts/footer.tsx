@@ -36,7 +36,7 @@ export const Footer = () => {
                 <div className="basis-2/6 flex-1 text-center">
                     <Card
                         isBlurred
-                        className="border-none bg-background"
+                        className="border-none bg-muted"
                         shadow="sm"
                     >
                         <CardBody>

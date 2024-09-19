@@ -49,7 +49,7 @@ export default function IndexPage() {
   }, [AutoScroll()])
 
   return (
-    <div className="overflow-hidden font-roboto">
+    <div className="overflow-hidden font-roboto bg-primary">
       <Head />
 
       <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center">

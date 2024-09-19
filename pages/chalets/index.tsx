@@ -195,7 +195,7 @@ export default function IndexPage() {
 
     return (
         <I18nProvider locale="en-GB">
-        <div className="overflow-hidden font-roboto">
+        <div className="overflow-hidden font-roboto bg-primary">
             <Head />
 
             <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center overflow-visible">
@@ -204,7 +204,7 @@ export default function IndexPage() {
                 </div>
                 <div className="h-[25vh]"></div>
 
-                <Card className="w-11/12 md:w-2/3 mx-auto mt-[10rem]">
+                <Card className="w-11/12 md:w-2/3 mx-auto mt-[10rem] bg-card">
                         <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Details</h1>
                         <p className="m-xl">• Only Club members can access the chalets.<br/>
                             • All chalet bookings must be from Friday to Sunday.<br/>
@@ -247,7 +247,7 @@ export default function IndexPage() {
                             alt="kakapo chalet hallway" />
                     </div>
                 </div>
-                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
+                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md bg-card">
                     <div className="flex-1 basis-[60%]">
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
@@ -342,7 +342,7 @@ export default function IndexPage() {
                             alt="kereru chalet kitchen" />
                     </div>
                 </div>
-                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
+                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md bg-card">
                     <div className="flex-1 basis-[60%]">
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>
@@ -438,7 +438,7 @@ export default function IndexPage() {
                             alt="pukeko chalet view" />
                     </div>
                 </div>
-                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md ">
+                <Card className="w-[95%] rounded-2xl m-[2.5%] mt-[-110%] md:mt-[-30%] shadow-2xl p-md flex flex-col md:flex-row gap-md bg-card">
                     <div className="flex-1 basis-[60%]">
                         <CardHeader>
                             <h2 className="m-lg my-sm font-bold text-xl">Description</h2>

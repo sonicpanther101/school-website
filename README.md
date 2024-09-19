@@ -109,7 +109,7 @@ When testing using the given website ([https://validator.w3.org/](https://valida
 
 ### Evidence of addressing relevant implications
 
-I have addressed the implication of aesthetics by applying a colour scheme specifically designed to be plain, simple and pleasing to the eye.
+I have addressed the implication of aesthetics by applying Catppuccin, a colour scheme specifically designed to be plain, simple and pleasing to the eye. However after talking with Mrs Searle, my stakeholder for this project, *after* the date of submission, she told me that my colour scheme was too plain. She recommended I add some more colour to the website to make it more inspiring and less bland. So I used [this tool](https://coolors.co/) to help me find colours for my new colour scheme. It was very good to be listening to music while choosing this, refreshing every beat/bar of the song. I was looking for colours that somewhat suited the theme of a ski chalet site, and I think I did a decent job at it. Also this was done at 3:30 AM, so excuse the mess of a thought train at the moment.
 <br>
 <br>
 I have addressed the implication of user-friendliness by making sure that the website is easy to use and intuitive to use for both new and returning users through the use of flexboxes to well space elements and the use of common convention of websites, having intuitive navigation for everyone who has used a website before.

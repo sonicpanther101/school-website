@@ -119,7 +119,7 @@ export default function IndexPage() {
             <Head />
 
             <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center">
-            <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[115vh] lg:h-[85vh] flex flex-col">
+            <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[115vh] lg:h-[85vh] flex flex-col bg-muted">
                 <CardHeader className="flex">
                     <h1 className="text-5xl font-black m-xl">Register</h1>
                 </CardHeader>
