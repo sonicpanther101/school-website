@@ -131,7 +131,7 @@ export const Head = () => {
         <Divider
           orientation="vertical"
           className="h-xl"
-        />
+        /> 
         <NavbarItem>
           <ThemeSwitch className={`ml-xl hidden md:flex p-md transition-all duration-250 ${isScrolled ? "" : "bg-[radial-gradient(rgba(90,170,229,0.7)_0%,rgba(90,170,229,0.7)50%,rgba(90,170,229,0.0)_70%,rgba(90,170,229,0.0)_100%)]"}`}/>
         </NavbarItem>
