@@ -94,18 +94,18 @@ export const Head = () => {
         </Link>
       </NavbarBrand>
 
-      <NavbarContent className="gap-4 hidden md:flex" justify="center">
+      <NavbarContent className="gap-4 hidden md:flex " justify="center">
         <NavbarItem>
-          <Link href="/" className="p-xl pb-md">
+          <Link href="/" className={`p-xl py-lg transition-all duration-250 ${isScrolled ? "" : "bg-[radial-gradient(rgba(90,170,229,0.7)_0%,rgba(90,170,229,0.7)50%,rgba(90,170,229,0.0)_70%,rgba(90,170,229,0.0)_100%)]"}`}>
             Home
           </Link>
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className="h-xl"
+          className="h-xl transition-all duration-250"
         />
         <NavbarItem>
-          <Link href="/chalets" className="p-xl pb-md">
+          <Link href="/chalets" className={`p-xl py-lg transition-all duration-250 ${isScrolled ? "" : "bg-[radial-gradient(rgba(90,170,229,0.7)_0%,rgba(90,170,229,0.7)50%,rgba(90,170,229,0.0)_70%,rgba(90,170,229,0.0)_100%)]"}`}>
             Our Chalets
           </Link>
         </NavbarItem>
@@ -133,7 +133,7 @@ export const Head = () => {
           className="h-xl"
         />
         <NavbarItem>
-          <ThemeSwitch className="ml-xl hidden md:flex"/>
+          <ThemeSwitch className={`ml-xl hidden md:flex p-md transition-all duration-250 ${isScrolled ? "" : "bg-[radial-gradient(rgba(90,170,229,0.7)_0%,rgba(90,170,229,0.7)50%,rgba(90,170,229,0.0)_70%,rgba(90,170,229,0.0)_100%)]"}`}/>
         </NavbarItem>
       </NavbarContent>
 

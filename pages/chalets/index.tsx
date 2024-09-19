@@ -189,28 +189,41 @@ export default function IndexPage() {
     const [emblaRef2] = useEmblaCarousel({
         loop: true, duration: 50
     }, [Autoplay({ delay: 3000 })])
+    const [emblaRef3] = useEmblaCarousel({
+        loop: true, duration: 50
+    }, [Autoplay({ delay: 10000 })])
 
     return (
         <I18nProvider locale="en-GB">
         <div className="overflow-hidden font-roboto">
             <Head />
 
-            <div className="absolute w-full h-[30vh] z-10 flex flex-col justify-center items-center">
-                <h1 className="text-5xl md:text-7xl font-black text-center select-none">Our Chalets</h1>
-            </div>
-            <div className="h-[25vh]"></div>
+            <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center overflow-visible">
+                <div className="absolute w-full h-[30vh] z-10 flex flex-col justify-center items-center mb-[30rem] md:mb-[20rem]">
+                    <h1 className="text-5xl md:text-7xl font-black text-center text-[#CDD6F4] select-none bg-[radial-gradient(rgba(0,0,0,0.8)_0%,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.0)_70%,rgba(0,0,0,0.0)_100%)] px-xxl md:px-x4l py-x3l">Our Chalets</h1>
+                </div>
+                <div className="h-[25vh]"></div>
 
-            <Card className="w-11/12 md:w-2/3 mx-auto">
-                    <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Details</h1>
-                    <p className="m-xl">• Only Club members can access the chalets.<br/>
-                        • All chalet bookings must be from Friday to Sunday.<br/>
-                        • Chalets offer shared accommodation for between 6 and 40 people per chalet.<br/>
-                        • All three chalets are on the mountain, so you can ski to and from the chalets.<br/>
-                        • The mountain gives 550 hectares of skiing/snowboarding area, and the longest
-                        ski/snowboard season in New Zealand.<br/>
-                        • The table below summarises key features of the three chalets, including the
-                        maximum number of adults and children that each chalet can accommodate.</p>
-            </Card>
+                <Card className="w-11/12 md:w-2/3 mx-auto mt-[10rem]">
+                        <h1 className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Details</h1>
+                        <p className="m-xl">• Only Club members can access the chalets.<br/>
+                            • All chalet bookings must be from Friday to Sunday.<br/>
+                            • Chalets offer shared accommodation for between 6 and 40 people per chalet.<br/>
+                            • All three chalets are on the mountain, so you can ski to and from the chalets.<br/>
+                            • The mountain gives 550 hectares of skiing/snowboarding area, and the longest
+                            ski/snowboard season in New Zealand.<br/>
+                            • The table below summarises key features of the three chalets, including the
+                            maximum number of adults and children that each chalet can accommodate.</p>
+                </Card>
+            </div>
+                
+            <div className="w-full h-screen overflow-hidden" ref={emblaRef3}>
+                <div className="flex">
+                    <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/maunga_club_cabin.jpg?raw=true')` }}></div>
+                    <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_1.jpg?raw=true')` }}></div>
+                    <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_light.jpg?raw=true')` }}></div>
+                </div>
+            </div>
 
             <div>
                 <h1 id="kakapo" className="text-3xl md:text-5xl font-black text-center select-none mt-xl">Kakapo Chalet</h1>

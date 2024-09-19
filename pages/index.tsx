@@ -52,11 +52,11 @@ export default function IndexPage() {
     <div className="overflow-hidden font-roboto">
       <Head />
 
-      <div className="absolute w-full h-screen z-10 bg-background opacity-50 flex flex-col justify-center items-center">
-      </div>
       <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center">
-        <h1 className="text-5xl md:text-7xl font-black text-center select-none">Maunga Club</h1>
-        <h2 className="mt-4 text-lg md:text-2xl text-center select-none">Join the club and discover your mountain paradise.</h2>
+        <div className="bg-[radial-gradient(rgba(0,0,0,0.8)_0%,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.0)_70%,rgba(0,0,0,0.0)_100%)] p-xxl md:p-x4l">
+        <h1 className="text-5xl md:text-7xl font-black text-[#CDD6F4] text-center select-none">Maunga Club</h1>
+        <h2 className="mt-4 text-lg md:text-2xl text-center text-[#CDD6F4] select-none">Join the club and discover your mountain paradise.</h2>
+        </div>
       </div>
 
       <div className="w-full h-screen overflow-hidden" ref={emblaRef}>

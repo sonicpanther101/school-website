@@ -10,6 +10,9 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from 'embla-carousel-react';
+
 if (typeof window !== 'undefined') {
     const observer = new MutationObserver(() => {
         if (document.documentElement.getAttribute('data-theme') === "dark") {
@@ -106,11 +109,16 @@ export default function IndexPage() {
         }
     }, [signedIn]);
 
+    const [emblaRef] = useEmblaCarousel({
+    loop: true, duration: 50
+  }, [Autoplay({ delay: 10000 })])
+
 
     return (
         <div className="overflow-hidden font-roboto">
             <Head />
 
+            <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center">
             <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[115vh] lg:h-[85vh] flex flex-col">
                 <CardHeader className="flex">
                     <h1 className="text-5xl font-black m-xl">Register</h1>
@@ -156,7 +164,7 @@ export default function IndexPage() {
                         <Button
                             component="label"
                             role={undefined}
-                            className={`w-2/3 lg:w-full bg-background ${proofOfAddressError ? 'text-red-600' : ''}`}
+                            className={`w-2/3 lg:w-full bg-background ${proofOfAddressError ? 'text-red-600' : 'text-foreground'}`}
                             variant="contained"
                             tabIndex={-1}
                             startIcon={<CloudUploadIcon />}
@@ -175,7 +183,7 @@ export default function IndexPage() {
                         <Button
                             component="label"
                             role={undefined}
-                            className={`w-2/3 lg:w-full bg-background ${proofOfIDError ? 'text-red-600' : ''}`}
+                            className={`w-2/3 lg:w-full bg-background ${proofOfIDError ? 'text-red-600' : 'text-foreground'}`}
                             variant="contained"
                             tabIndex={-1}
                             startIcon={<CloudUploadIcon />}
@@ -192,10 +200,10 @@ export default function IndexPage() {
                         </Button>
                         
                         <NextUIButton
-                            className="w-x4l p-sm"
+                            className="w-x4l p-sm hover:translate-x-6 hover:scale-105 hover:bg-secondary hover:text-foreground"
                             type="submit"
                         >
-                            Sign up &rarr;
+                            Sign up <span className="ml-sm hidden md:inline">&rarr;</span>
                         </NextUIButton>
                     </form>
                 </CardBody>
@@ -204,6 +212,15 @@ export default function IndexPage() {
                     <p className="text-lg m-md">Already have an account? Too bad, I was only given a week. Reregister.</p>
                 </CardFooter>
             </Card>
+            </div>
+
+            <div className="w-full h-screen overflow-hidden" ref={emblaRef}>
+                <div className="flex">
+                    <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/maunga_club_cabin.jpg?raw=true')` }}></div>
+                    <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_1.jpg?raw=true')` }}></div>
+                    <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_light.jpg?raw=true')` }}></div>
+                </div>
+            </div>
 
             <Footer />
         </div>

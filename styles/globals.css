@@ -6,6 +6,7 @@
 @layer base {
   :root {
     --background: 220, 23%, 95%;
+    --test: rgba(128, 128, 128, 0);
     --foreground: 234, 16%, 35%;
     --card: 220, 23%, 95%;
     --card-foreground: 234, 16%, 35%;
