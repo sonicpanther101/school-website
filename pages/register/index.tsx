@@ -108,7 +108,7 @@ export default function IndexPage() {
 
 
     return (
-        <div className="overflow-hidden font-jetBrains">
+        <div className="overflow-hidden font-roboto">
             <Head />
 
             <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[115vh] lg:h-[85vh] flex flex-col">

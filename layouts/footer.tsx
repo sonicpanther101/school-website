@@ -6,7 +6,7 @@ import { Card, CardBody, Button, Slider } from "@nextui-org/react";
 export const Footer = () => {
 
     return (
-        <footer className="font-jetBrains">
+        <footer className="font-roboto">
             <div className="flex flex-col md:flex-row p-xl pt-xxl bg-secondary">
                 <div className="flex-1 text-center my-sm">
                     <Link href="/" className="p-md">

@@ -81,7 +81,7 @@ export const Head = () => {
     <Navbar
       isBlurred={false}
       onMenuOpenChange={setIsMenuOpen}
-      className={`fixed transition-all duration-250 font-jetBrains ${isScrolled ? "shadow-md bg-secondary" : "bg-transparent"}`}>
+      className={`fixed transition-all duration-250 font-roboto ${isScrolled ? "shadow-md bg-secondary" : "bg-transparent"}`}>
       <NavbarBrand>
         <Link href="/">
           <Image

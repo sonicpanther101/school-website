@@ -192,7 +192,7 @@ export default function IndexPage() {
 
     return (
         <I18nProvider locale="en-GB">
-        <div className="overflow-hidden font-jetBrains">
+        <div className="overflow-hidden font-roboto">
             <Head />
 
             <div className="absolute w-full h-[30vh] z-10 flex flex-col justify-center items-center">

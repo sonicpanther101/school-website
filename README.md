@@ -111,13 +111,21 @@ When testing using the given website ([https://validator.w3.org/](https://valida
 
 I have addressed the implication of aesthetics by applying a colour scheme specifically designed to be plain, simple and pleasing to the eye.
 <br>
+<br>
 I have addressed the implication of user-friendliness by making sure that the website is easy to use and intuitive to use for both new and returning users through the use of flexboxes to well space elements and the use of common convention of websites, having intuitive navigation for everyone who has used a website before.
+<br>
 <br>
 I have addressed the implication of consistency and convenience by making the website follow the common layout of websites, allowing for users to easily and quickly find what they need.
 <br>
-I have addressed the implication of intellectual property, legal rights by only using third-party content when necessary and by making the most of the images given. The few times I did use third-party content, I got it from [Pixabay](https://pixabay.com/) allowing me to use their images for my purpose because they are royalty free. Another thing that needs to be taken into account is that I have used the google font [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) to style the website. Google fonts are all free for use in even commercial projects.
+<br>
+I have addressed the implication of intellectual property, legal rights by only using third-party content when necessary and by making the most of the images given. The few times I did use third-party content, I got it from [Pixabay](https://pixabay.com/) allowing me to use their images for my purpose because they are royalty free. Another thing that needs to be taken into account is that I have used the google font [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) to style the website. Google fonts are all free for use in even commercial projects. 
+<br>
+After talking with Mrs Searle, my stakeholder for this project, *after* the date of submission, she told me that the JetBrains Mono font is not a pleasing font to look at because it is monospaced and looks old fashioned like a typewriter font. She recomended I just use a default font such as Roboto, so I changed the font to Roboto, which is another free google font that is much more pleasing to view.
+<br>
+
 <br>
 I have addressed the implication of privacy and confidentiality by not sharing any personal information with third parties, keeping all data locally (in the browser) and not saving/taking any other information.
+<br>
 <br>
 I have addressed the implication of sustainability and future-proof by using an upgradable framework and core component libraries that can be easily used in the future also with new technologies. Because one of the key things in sustainability is that it can be maintained in the future, code readability is key, this is why I have used plugins such as Prettier and Eslint as well as using the component libraries to simplify the code in the main files.
 

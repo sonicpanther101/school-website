@@ -21,7 +21,7 @@ module.exports = {
 			percent1: '5%',
 		},
 		fontFamily: {
-			'jetBrains': ['"JetBrains Mono"', 'monospace'],
+			'roboto': ['"Roboto"', 'sans-serif'],
 		},
 		extend: {
 			borderRadius: {
