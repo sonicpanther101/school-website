@@ -22,18 +22,18 @@ Most of my work is in the files that I coded from scratch, and that were not gen
 
 ### Purpose of the outcome
 
-The purpose of this website is to make a booking system for Maunga Club chalets that allows users to book chalets in a functional, aesthetically pleasing and user-friendly way.
+This website aims to make a booking system for Maunga Club chalets that allows users to book chalets in a functional, aesthetically pleasing and user-friendly way.
 
 ### Requirements of end users
 
-The end users of this website are ultimately Maunga Club members or people looking to join. Because of this, I need to make it easy to use and aesthetically pleasing for new users and for existing users I need it to be consistent and convenient.
+The end users of this website are ultimately Maunga Club members or people looking to join. Because of this, I need to make it easy to use and aesthetically pleasing for new and existing users I need it to be consistent and convenient.
 
 ### Explanation of implications relevant to this website
 
 Because of the requirements of this website, the relevant implications for this website are:
 
 - The website should be aesthetically pleasing to draw in new users.
-- The website should be user-friendly and easy to use so that users do not have to spend too much time on the website to find what they need and not be frustrated with the website.
+- The website should be user-friendly and easy to use so that users can save time on the website to find what they need and not be frustrated with the website.
 - The website should be consistent and convenient so that users do not have to spend much time on the website to find what they need if they already know what they need.
 
 Because of general requirements for all websites in the industry, other relevant implications for this website are:
@@ -45,27 +45,27 @@ Because of general requirements for all websites in the industry, other relevant
 
 ### Demonstration of using tools, techniques and conventions that are appropriate for the purpose and end users of the website
 
-I have demonstrated use of tools appropriate for the purpose of the website by using the following tools:
+I have demonstrated use of tools appropriate for the website by using the following tools:
 
 - [Next.js](https://nextjs.org), used to build the website.
 - [React](https://reactjs.org), used to build the website.
 - [Vercel](https://vercel.com/), used to deploy the website.
-- [Tailwind CSS](https://tailwindcss.com), used to style the website in an efficient way.
+- [Tailwind CSS](https://tailwindcss.com), used to style the website efficiently.
 - [Tailwind Variants](https://tailwind-variants.org), used to have multiple style schemes in the website, including dark mode.
 - [Framer Motion](https://framer.com/motion), used to animate the website.
 - [Eslint](https://eslint.org), used to lint (Code linting is the process of analysing source code for potential errors, warnings, and best practice violations to improve code quality and readability.) the code.
 - [Prettier](https://prettier.io), used to format the code.
-- [TypeScript](https://typescriptlang.org), a type safe version of JavaScript, used to write the code.
+- [TypeScript](https://typescriptlang.org), a type-safe version of JavaScript, is used to write the code.
 - [NextUI](https://nextui.org), used to style the website with pre-built components.
 - [Embla Carousel](https://embla-carousel.com), used to create a carousel with pre-built components.
 
-I have demonstrated use of techniques appropriate for the purpose of the website by using flex boxes to align elements in an aesthetic way.
+I have demonstrated using techniques appropriate for the website by using flex boxes to align elements aesthetically.
 Also by using media queries to make the website responsive by using md: before styles that should only apply to the website when on a landscape view. More info about md: [here](https://tailwindcss.com/docs/responsive-design).
 
-I have demonstrated use of conventions appropriate for the purpose of the website by using the following conventions:
+I have demonstrated use of conventions appropriate for the website by using the following conventions:
 
-- The use of CSS flexbox to align elements in an aesthetic way.
-- Because it is a website to be used for a company, it should use the industry standard software such as using Next.js, React and Vercel to build and deploy the website in an efficient way.
+- The use of CSS flexbox to align elements aesthetically.
+- Because it is a website for a company, it should use industry-standard software such as Next.js, React and Vercel to build and deploy the website efficiently.
 - The use of footer, header and navbar to follow the HTML semantics conventions.
 
 ## Merit Criteria
@@ -80,7 +80,7 @@ I have demonstrated use of conventions appropriate for the purpose of the websit
 - Evidence of getting feedback from end-users and using this feedback to improve the website design <br>[Github - Issues](https://github.com/sonicpanther101/school-website/issues?q=is%3Aissue+is%3Aclosed)
 - Using the popular [Catppuccin theme](https://github.com/catppuccin/catppuccin) to style the website<br>![Using the Catppuccin theme to style the website](public/image-6.png)
 
-### Evidence of using information I gathered from TESTING to improve the quality of the website
+### Evidence of using the information I gathered from TESTING to improve the quality of the website
 
 When testing the website with a screen reader, I found that many images did not have alt text. I then added explanatory alt text to all images.
 ![search for all uses of alt text in the project](public/image-7.png)
@@ -90,7 +90,7 @@ When going through my site near the end of the coding process, I found that a fe
 
 When getting my dad to test the website, he found that the website had terrible contrast in certain areas, so he submitted an [issue report](https://github.com/sonicpanther101/school-website/issues/1)
 ![issue report](public/image-12.png)
-I then fixed the contrast and closed the issue, using the industry standard github issues system. The part with a problem went from:
+I then fixed the contrast and closed the issue, using the industry-standard GitHub issues system. The part with a problem went from:
 ![bad contrast](public/image-10.png)
 To:
 ![good contrast](public/image-11.png)
@@ -109,31 +109,37 @@ When testing using the given website ([https://validator.w3.org/](https://valida
 
 ### Evidence of addressing relevant implications
 
-I have addressed the implication of aesthetics by applying Catppuccin, a colour scheme specifically designed to be plain, simple and pleasing to the eye. However after talking with Mrs Searle, my stakeholder for this project, *after* the date of submission, she told me that my colour scheme was too plain. She recommended I add some more colour to the website to make it more inspiring and less bland. So I used [this tool](https://coolors.co/) to help me find colours for my new colour scheme. It was very good to be listening to music while choosing this, refreshing every beat/bar of the song. I was looking for colours that somewhat suited the theme of a ski chalet site, and I think I did a decent job at it. Also this was done at 3:30 AM, so excuse the mess of a thought train at the moment.
-<br>
-<br>
-I have addressed the implication of user-friendliness by making sure that the website is easy to use and intuitive to use for both new and returning users through the use of flexboxes to well space elements and the use of common convention of websites, having intuitive navigation for everyone who has used a website before.
-<br>
-<br>
-I have addressed the implication of consistency and convenience by making the website follow the common layout of websites, allowing for users to easily and quickly find what they need.
-<br>
-<br>
-I have addressed the implication of intellectual property, legal rights by only using third-party content when necessary and by making the most of the images given. The few times I did use third-party content, I got it from [Pixabay](https://pixabay.com/) allowing me to use their images for my purpose because they are royalty free. Another thing that needs to be taken into account is that I have used the google font [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) to style the website. Google fonts are all free for use in even commercial projects. 
-<br>
-After talking with Mrs Searle, my stakeholder for this project, *after* the date of submission, she told me that the JetBrains Mono font is not a pleasing font to look at because it is monospaced and looks old fashioned like a typewriter font. She recomended I just use a default font such as Roboto, so I changed the font to Roboto, which is another free google font that is much more pleasing to view.
-<br>
+I have addressed the implication of aesthetics by applying Catppuccin, a colour scheme specifically designed to be plain, simple and pleasing to the eye. However after talking with Mrs Searle, my stakeholder for this project, *after* the date of submission, she told me that my colour scheme was too plain. She recommended I add some more colour to the website to make it more inspiring and less bland. So I used [this tool](https://coolors.co/) to help me find colours for my new colour scheme. It was very good to be listening to music while choosing this, refreshing every beat/bar of the song. I was looking for colours that somewhat suited the theme of a ski chalet site, and I think I did a decent job at it. Also, this was done at 3:30 AM, so excuse the mess of a thought train at the moment. [Here](https://github.com/sonicpanther101/school-website/blob/main/styles/globals.css) is a link to my global colour scheme.
 
+Another thing I have done to make the website more aesthetically pleasing was to add generous whitespace to the website to make it more aesthetically pleasing by not overwhelming the eyes of the user. As shown in the image below, I have used white space to space out the content of the website.
+
+![whitespace](public/image-32.png)
+
+The final thing I will write about for aesthetics is the use of hierarchy. I have used hierarchy to make the website more intuitive to use. and to guide the user to what they need while showing them other tidbits of information along the way. I have done this for the home page by having a hero image at the top to draw the user to the website. I have small stat boxes after that to show that this website is updated regularly. I then have an about us block followed by reviews to show what people have to say about the chalets. After that, I have a list of chalets to link to the chalets page. This is placed here so that people see the positives of the chalets before they click on them. Finally, I have the footer with ways to contact.
+
+
+I have addressed the implication of user-friendliness by making sure that the website is easy to use and intuitive to use for both new and returning users through the use of flexboxes to well-space elements and the use of common convention of websites, having intuitive navigation for everyone who has used a website before.
+
+
+I have addressed the implication of consistency and convenience by making the website follow the common layout of websites, allowing users to easily and quickly find what they need.
+
+
+I have addressed the implication of intellectual property, legal rights by only using third-party content when necessary and by making the most of the images given. The few times I did use third-party content, I got it from [Pixabay](https://pixabay.com/) allowing me to use their images for my purpose because they are royalty-free. Another thing that needs to be taken into account is that I have used the Google font [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) to style the website. Google fonts are all free for use in commercial projects. 
 <br>
+After talking with Mrs Searle, my stakeholder for this project, *after* the date of submission, she told me that the JetBrains Mono font is not a pleasing font to look at because it is monospaced and looks old fashioned like a typewriter font. She recommended I just use a default font such as Roboto, so I changed the font to Roboto, which is another free Google font that is much more pleasing to view.
+
+
 I have addressed the implication of privacy and confidentiality by not sharing any personal information with third parties, keeping all data locally (in the browser) and not saving/taking any other information.
-<br>
-<br>
+
+
 I have addressed the implication of sustainability and future-proof by using an upgradable framework and core component libraries that can be easily used in the future also with new technologies. Because one of the key things in sustainability is that it can be maintained in the future, code readability is key, this is why I have used plugins such as Prettier and Eslint as well as using the component libraries to simplify the code in the main files.
+
 
 ## Excellence Criteria
 
 ### Demonstration of using efficient tools and techniques when developing my website
 
-I have used the default Next.js "pages" file structure. This means that all pages are created in a folder called "pages" and each page is created in a folder with the name of the page, eg. "pages/index.tsx" for the homepage and "pages/register/index.tsx" for the register page. This is key for having a logical and industry standard file structure.
+I have used the default Next.js "pages" file structure. This means that all pages are created in a folder called "pages" and each page is created in a folder with the name of the page, eg. "pages/index.tsx" for the homepage and "pages/register/index.tsx" for the register page. This is key for having a logical and industry-standard file structure.
 
 ![file structure image](public/image-16.png)
 
@@ -154,7 +160,7 @@ I went ahead and fixed these errors however I cannot fix some because I am using
 ![change 1](public/image-20.png)
 ![change 2](public/image-21.png)
 
-I have optimised my website by optimising the load method for images and other media by loading them after the page has loaded. This means that the website loads faster and is usable before the image is loaded. This might seem like it would be bad, however none of the images in the website are necessary for the website to work/be usable. This is good for people who have a slow connection and don't want to wait for the images to load, and can have them loaded in the background, invalidating the need for images to be compressed to a lower quality to load faster.
+I have optimised my website by optimising the load method for images and other media by loading them after the page has loaded. This means that the website loads faster and is usable before the image is loaded. This might seem like it would be bad, however, none of the images in the website are necessary for the website to work/be usable. This is good for people who have a slow connection and don't want to wait for the images to load and can have them loaded in the background, invalidating the need for images to be compressed to a lower quality to load faster.
 
 ### Evidence of continually improving my website throughout the design, development and testing process
 
@@ -168,11 +174,11 @@ I then went ahead and made the homepage to a decent quality (sorry for the rip i
 
 ![pre feedback homepage](public/image-22.png)
 
-After that I asked for feedback from Oli. He said that I should use higher quality images and remove the placeholder images, so I got the images from the google classroom and a few from [Pixabay](https://pixabay.com/) to avoid any legal concerns. You can find everything I changed from Oli's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/a94ad3619716569ee1c1d14ee447b56f22c7bbf4).
+After that, I asked for feedback from Oli. He said that I should use higher-quality images and remove the placeholder images, so I got the images from Google Classroom and a few from [Pixabay](https://pixabay.com/) to avoid any legal concerns. You can find everything I changed from Oli's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/a94ad3619716569ee1c1d14ee447b56f22c7bbf4).
 
 ![after Oli's feedback](public/image-23.png)
 
-After that, I asked for feedback from my dad. He said that the pixabay images didn't have enough contrast when in dark mode. I hadn't noticed this because my monitor with which I was making the website had a very high contrast, so this was a good thing he noticed by using his phone and laptop. I had to search the tailwind CSS documentation to find how to invert the colours of an image, I found [this](https://tailwindcss.com/docs/invert). I then also needed to add some TypeScript to toggle the inverted colours.
+After that, I asked for feedback from my dad. He said that the Pixabay images didn't have enough contrast when in dark mode. I hadn't noticed this because my monitor with which I was making the website had very high contrast, so this was a good thing he noticed by using his phone and laptop. I had to search the tailwind CSS documentation to find how to invert the colours of an image, I found [this](https://tailwindcss.com/docs/invert). I then also needed to add some TypeScript to toggle the inverted colours.
 
 ![changes I made to the typescript](public/image-24.png)
 
@@ -180,11 +186,11 @@ You can find everything I changed from my dad's feedback here: [Github - Commits
 
 ![after my dad's feedback](public/image-25.png)
 
-After getting feedback from Mrs Searle, my stakeholder for this project, *after* the date of submision, she said that the hero image on the landing page looked dull. 
+After getting feedback from Mrs Searle, my stakeholder for this project, *after* the date of submission, she said that the hero image on the landing page looked dull. 
 
 ![before Mrs Searle's feedback](public/image-31.png)
 
-This was because I was applying a filter to the image to increase it's contrast with the title. I then changed my filter to only apply in a range around my title text.
+This was because I was applying a filter to the image to increase its contrast with the title. I then changed my filter to only apply in a range around my title text.
 
 ![after Mrs Searle's feedback](public/image-30.png)
 
@@ -201,13 +207,13 @@ I then used a mix of [Nextui inputs](https://nextui.org/docs/components/input) a
 
 ![pre feedback registration page](public/image-27.png)
 
-After this I went and got some feedback from my dad, who was using his phone that has a different resolution to the ones I was testing earlier, and he said that the submit sign up button was hidden on his phone.
+After this, I went and got some feedback from my dad, who was using his phone that has a different resolution to the ones I was testing earlier, and he said that the submit sign-up button was hidden on his phone.
 
 ![sign up button not there](public/image-28.png)
 
 I then made the registration card have a larger height in mobile view by changing `h-[85vh] lg:h-[70vh]` to `h-[115vh] lg:h-[85vh]`. `h-` documentation: [Tailwind CSS - Height](https://tailwindcss.com/docs/height) and `ld:` documentation: [Tailwind CSS - Responsiveness](https://tailwindcss.com/docs/responsive-design). This change is a great example of why tailwind CSS is so powerful, because instead of:
 - Finding the element that you want to change
-- Finding and remember its class
+- Finding and remembering its class
 - Going to the CSS file
 - Finding the class that you want to change
 - Finally change it
@@ -223,7 +229,7 @@ You can find everything I changed from my dad's feedback here: [Github - Commits
 
 ## Challenges
 
-Having 3 weeks to make a website sounds like a lot of time. However, with the preliminary  exams in the middle of that time slot, I had very little time to work on the website in the first 2 weeks because I was studying hard for the exams. I worked on the header and footer of the website up until Tuesday of the final week, working at a normal pace. I realised it had to be done by Friday, and cranked up the hours, because when coding you can't code faster or slower, you just have to put more time into it. This allowed me to finish the majority of the website by Thursday, only having to stay up till 4AM twice to get there. Finally on friday, I started on the write up and found that it was only due on Sunday, which made me really mad. But this also made me proud of what I can do in such a short amount of time.
+Having 3 weeks to make a website sounds like a lot of time. However, with the preliminary exams in the middle of that time slot, I had very little time to work on the website in the first 2 weeks because I was studying hard for the exams. I worked on the header and footer of the website up until Tuesday of the final week, working at a normal pace. I realised it had to be done by Friday, and cranked up the hours because when coding you can't code faster or slower, you just have to put more time into it. This allowed me to finish the majority of the website by Thursday, only having to stay up till 4 AM twice to get there. Finally, on Friday, I started on the write-up and found that it was only due on Sunday, which made me mad. But this also made me proud of what I can do in such a short amount of time.
 
 ## Planning
 

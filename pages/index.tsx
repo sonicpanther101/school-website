@@ -177,7 +177,7 @@ export default function IndexPage() {
             <div className="flex-1 hidden md:block"></div>
             <div className="flex-1 hidden md:block"></div>
             <div className="flex-1 xl:hidden"></div>
-            <Card className="flex-1 m-sm p-sm mb-[-25rem] md:m-lg md:p-lg md:mb-[-5rem]">
+            <Card className="flex-1 m-sm p-sm mb-[-25rem] md:m-lg md:p-lg md:mb-[-5rem] bg-secondary">
               <CardHeader className="font-bold text-3xl">
                 Kākāpo Chalet
               </CardHeader>
@@ -185,7 +185,7 @@ export default function IndexPage() {
                 The Kākāpo is our largest chalet, offering ample space and luxurious amenities for groups of all sizes. Its spacious kitchen, dining, and living areas provide plenty of room for socializing and relaxation. The Kākāpo is ideal for families with children, offering a variety of entertainment options and comfortable sleeping arrangements. With its prime location on the mountain, the Kākāpo provides easy access to all the best skiing and snowboarding terrain.
               </CardBody>
               <CardFooter className="justify-end">
-                <Button as={Link} href={'/chalets#kakapo'} className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+                <Button as={Link} href={'/chalets#kakapo'} className="p-sm md:p-md m-xl md:m-none text-lg bg-muted">Book Now</Button>
               </CardFooter>
             </Card>
           </div>
@@ -196,7 +196,7 @@ export default function IndexPage() {
             <div className="flex-1 hidden md:block"></div>
             <div className="flex-1 hidden md:block"></div>
             <div className="flex-1 xl:hidden"></div>
-            <Card className="flex-1 flex-grow m-sm p-sm mb-[-25rem] md:m-lg md:p-lg md:mb-[-5rem]">
+            <Card className="flex-1 flex-grow m-sm p-sm mb-[-25rem] md:m-lg md:p-lg md:mb-[-5rem] bg-secondary">
               <CardHeader className="font-bold text-3xl">
                 Kererū Chalet
               </CardHeader>
@@ -204,7 +204,7 @@ export default function IndexPage() {
                 The Kererū is our smallest chalet, providing a cozy and intimate atmosphere for families of four. With its two bedrooms and separate living area, the Kererū offers a comfortable and convenient layout for families with young children. The chalet's location on the mountain provides easy access to the slopes and stunning views of the surrounding landscape. The Kererū is a perfect choice for families seeking a quiet and peaceful retreat in the mountains.
               </CardBody>
               <CardFooter className="justify-end">
-                <Button as={Link} href={'/chalets#kereru'}  className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+                <Button as={Link} href={'/chalets#kereru'}  className="p-sm md:p-md m-xl md:m-none text-lg bg-muted">Book Now</Button>
               </CardFooter>
             </Card>
           </div>
@@ -215,7 +215,7 @@ export default function IndexPage() {
             <div className="flex-1 hidden md:block"></div>
             <div className="flex-1 hidden md:block"></div>
             <div className="flex-1 xl:hidden"></div>
-            <Card className="flex-1 flex-grow m-sm p-sm mb-[-25rem] md:m-lg md:p-lg md:mb-[-5rem]">
+            <Card className="flex-1 flex-grow m-sm p-sm mb-[-25rem] md:m-lg md:p-lg md:mb-[-5rem] bg-secondary">
               <CardHeader className="font-bold text-3xl">
                 Pūkeko Chalet
               </CardHeader>
@@ -223,7 +223,7 @@ export default function IndexPage() {
                 The Pūkeko is a perfect choice for families or groups seeking a more intimate setting. With its limited adult/child capacity, the Pūkeko ensures a comfortable and enjoyable stay for all. The chalet's cozy living area is perfect for relaxing after a day on the slopes, while the well-equipped kitchen makes it easy to prepare meals for your group. The Pūkeko's location on the mountain offers stunning views and easy access to the ski area.
               </CardBody>
               <CardFooter className="justify-end">
-                <Button as={Link} href={'/chalets#pukeko'} className="p-sm md:p-md m-xl md:m-none text-lg">Book Now</Button>
+                <Button as={Link} href={'/chalets#pukeko'} className="p-sm md:p-md m-xl md:m-none text-lg bg-muted">Book Now</Button>
               </CardFooter>
             </Card>
           </div>

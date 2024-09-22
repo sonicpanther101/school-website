@@ -314,7 +314,7 @@ export default function IndexPage() {
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("kakapo")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("kakapo")} className="signed-in hidden p-sm md:p-md text-lg bg-secondary" >Book Now</Button>
                         <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
@@ -410,7 +410,7 @@ export default function IndexPage() {
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("kereru")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("kereru")} className="signed-in hidden p-sm md:p-md text-lg bg-secondary" >Book Now</Button>
                         <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
@@ -507,7 +507,7 @@ export default function IndexPage() {
                                 }}
                             />
                         </div>
-                        <Button onClick={() => handleBooking("pukeko")} className="signed-in hidden p-sm md:p-md text-lg" >Book Now</Button>
+                        <Button onClick={() => handleBooking("pukeko")} className="signed-in hidden p-sm md:p-md text-lg bg-secondary" >Book Now</Button>
                         <Button as={Link} href="/register" className="signed-out p-sm md:p-md text-lg bg-secondary rounded-xl" >Join the Club</Button>
                     </CardFooter>
                 </Card>
