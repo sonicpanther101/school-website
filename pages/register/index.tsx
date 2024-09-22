@@ -111,14 +111,13 @@ export default function IndexPage() {
 
     const [emblaRef] = useEmblaCarousel({
     loop: true, duration: 50
-  }, [Autoplay({ delay: 10000 })])
-
+    }, [Autoplay({ delay: 10000 })])
 
     return (
-        <div className="overflow-hidden font-roboto">
+        <div className="overflow-hidden font-roboto bg-primary">
             <Head />
 
-            <div className="absolute w-full h-screen z-10 flex flex-col justify-center items-center">
+            <div className="absolute w-full h-[160vh] md:h-screen z-10 flex flex-col justify-center items-center">
             <Card className="w-[90%] lg:w-[40%] mx-[5%] lg:mx-[30%] my-[20%] lg:my-[10%] h-[115vh] lg:h-[85vh] flex flex-col bg-muted">
                 <CardHeader className="flex">
                     <h1 className="text-5xl font-black m-xl">Register</h1>
@@ -214,7 +213,7 @@ export default function IndexPage() {
             </Card>
             </div>
 
-            <div className="w-full h-screen overflow-hidden" ref={emblaRef}>
+            <div className="w-full h-screen overflow-hidden mb-[100%] md:mb-none" ref={emblaRef}>
                 <div className="flex">
                     <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/maunga_club_cabin.jpg?raw=true')` }}></div>
                     <div className="flex-[0_0_100%] min-w-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('https://github.com/sonicpanther101/school-website/blob/main/images/Maunga%20Club%20images/mountain_view_1.jpg?raw=true')` }}></div>
@@ -222,7 +221,7 @@ export default function IndexPage() {
                 </div>
             </div>
 
-            <Footer />
+            <Footer/>
         </div>
     )
 }

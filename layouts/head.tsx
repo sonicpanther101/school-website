@@ -137,7 +137,7 @@ export const Head = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="flex items-center flex-col">
+      <NavbarMenu className="flex items-center flex-col bg-secondary">
       <NavbarMenuItem className="flex-1 basis-1/10"></NavbarMenuItem>
         <NavbarMenuItem className="flex-1">
           <Link href="/" className="p-md">
