@@ -180,6 +180,17 @@ You can find everything I changed from my dad's feedback here: [Github - Commits
 
 ![after my dad's feedback](public/image-25.png)
 
+After getting feedback from Mrs Searle, my stakeholder for this project, *after* the date of submision, she said that the hero image on the landing page looked dull. 
+
+![before Mrs Searle's feedback](public/image-31.png)
+
+This was because I was applying a filter to the image to increase it's contrast with the title. I then changed my filter to only apply in a range around my title text.
+
+![after Mrs Searle's feedback](public/image-30.png)
+
+As you can see the hero image is much brighter now that the filter has been removed, while still retaining the contrast on the title. You can find everything I changed from Mrs Searle's feedback here: [Github - Commits](https://github.com/sonicpanther101/school-website/commit/8140e026e120d91b8ca94713ca6e0d19eb09fbd5) and you can find the log of this issue here: [Github - Issues](https://github.com/sonicpanther101/school-website/issues/6).
+
+
 There were a lot more changes that I made to the website after feedback, but these are only the ones from the homepage that I have logged.
 
 For the registration page, I got a rough plan of the page from the [Aceternity registration demo](https://ui.aceternity.com/components/signup-form).
